@@ -1,6 +1,6 @@
 
 
-<!DOCTYPE html>
+{% load static %}
 <html lang="en" >
 
 <head>
@@ -488,7 +488,7 @@ Pixel Grid
             <li><a class="nav-link scrollto " href="{% url 'actionplan:structure' %}">Structure</a></li>
           
           <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Partners</a></li>
-           <li><a class="nav-link scrollto" href="{% url 'actionplan:home' #contact %}">Contact</a></li>
+           <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -516,7 +516,7 @@ Pixel Grid
             <div class="card-group">
               <div class="underlay">
                 <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/wLMJQPH.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/5R.png')"></div>
                     <div class="card-block" >
                     <h5 class="card-title" style="font-family: 'Anton', sans-serif">5 RS (REDUCE, REUSE, RECYCLE, RECOVER, REFUSE)<hr></h5>
                     <p class="card-text" >Sanitation, models to reuse, reduce, recycle and recover waste,
@@ -527,7 +527,7 @@ Pixel Grid
               </div>
               <div class="underlay">
                <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/tT6Bxay.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/financial-inclusion.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">FINANCIAL INCLUSION<hr></h5>
                       <p class="card-text" >     “It is making financial services available to each and everyone,
@@ -539,7 +539,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/n6b2rib.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/sustainable-energy.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">SUSTAINABLE ENERGY<hr></h5>
                       <p class="card-text" >Maintaining, or generating energy from cleaner fuels, improving
@@ -550,7 +550,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/ssMsuUO.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/agriculture.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">AGRICULTURE<hr></h5>
                       <p class="card-text" >70 percent of India’s rural households still primarily depend on
@@ -561,7 +561,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/yAFDnZ1.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/water-management.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">WATER MANAGEMENT<hr></h5>
                       <p class="card-text" > "According to a recent report of NITI aayog, “21 of the major
@@ -572,9 +572,9 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/5rgwfW6.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/employability.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EMPLOYIBILITY<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EMPLOYABILITY<hr></h5>
                       <p class="card-text" > Our country is facing problems regarding Employability.This
                         sector is for startups that can act as an employment source in
                         rural areas, or for less-educated people.</p>
@@ -583,7 +583,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/WaGs6zS.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/health.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">HEALTH<hr></h5>
                       <p class="card-text" >   Seeking Start-Ups tackling malnutrition, providing digital
@@ -593,7 +593,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/women-empowerment.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">WOMEN EMPOWERMENT<hr></h5>
                       <p class="card-text" >Encouraging startups providing regional rights and facilities,
@@ -604,7 +604,7 @@ Pixel Grid
                 </div>
                  <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/pollution.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">POLLUTION<hr></h5>
                       <p class="card-text" >“Introducing this sector to come up with technologies that aid
@@ -615,7 +615,7 @@ Pixel Grid
                 </div>
                  <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/education.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">EDUCATION<hr></h5>
                       <p class="card-text" >Startups aiming at improving the quality of primary education,
@@ -627,7 +627,7 @@ Pixel Grid
                 </div>
                  <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/security.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">SECURITY<hr></h5>
                       <p class="card-text" >Startups aiming at increasing the security for online users, creating or prototyping physical or cyber security systems.</p>
@@ -636,7 +636,7 @@ Pixel Grid
                 </div>
                 <div class="underlay">
                   <div class="card">
-                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/Hp8NxLI.png')"></div>
+                    <div class="card-img-top" style="background-image: url('/static/rural-development.png')"></div>
                     <div class="card-block" >
                       <h5 class="card-title" style="font-family: 'Anton', sans-serif">RURAL DEVELOPMENT<hr></h5>
                       <p class="card-text" >  Startups helping in reducing the gap between rural and urban areas by developing the rural areas, in terms of health, poverty, literacy and infrastructure.</p>
