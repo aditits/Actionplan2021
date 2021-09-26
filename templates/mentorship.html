@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -16,10 +16,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assetsm&s/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'assetsm&s/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assetsm&s/css/mentorship.css" rel="stylesheet">
+  <link href="{% static 'assetsm&s/css/mentorship.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             </div>
           </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assetsm&s/img/hero-img.png" class="img-fluid" alt="">
+          <img src="{% static 'assetsm&s/img/hero-img.png' %}" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assetsm&s/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'assetsm&s/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 
