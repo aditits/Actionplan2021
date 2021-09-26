@@ -1,482 +1,169 @@
-{% load static %}
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="description"
-      content="Meghna One page parallax responsive HTML Template "
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentives</title>
 
-    <meta name="author" content="Muhammad Morshed" />
-
-    <title>Action Plan | Abhyuday,IIT Bombay</title>
-
-    <!-- Mobile Specific Meta
-		================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'favicon_blue.png' %}" />
-
-    <!-- CSS
-		================================================== -->
-    <!-- Fontawesome Icon font -->
-    <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}" />
-    <!-- bootstrap.min css -->
-    <link
-      rel="stylesheet"
-      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
-    />
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}" />
-    <!-- Magnific popup css -->
-    <link
-      rel="stylesheet"
-      href="{% static 'plugins/magnific-popup/dist/magnific-popup.css' %}"
-    />
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="{% static 'plugins/slick-carousel/slick/slick.css' %}" />
-    <link
-      rel="stylesheet"
-      href="{% static 'plugins/slick-carousel/slick/slick-theme.css' %}"
-    />
-    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{% static 'assets/css1/style.css' %}" />
-  </head>
-
-  <body
-    style="background-color: #242930"
-    id="body"
-    data-spy="scroll"
-    data-target=".navbar"
-    data-offset="50"
-  >
-    <header id="navigation" class="navbar navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- responsive nav button -->
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- /responsive nav button -->
-
-          <!-- logo -->
-             <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt=""/>
-          <!-- /logo -->
-        </div>
-
-        <!-- main nav -->
-        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-          <ul id="nav" class="nav navbar-nav navigation-menu">
-            <li><a data-scroll href="{% url 'actionplan:home' %}">Home</a></li>
-            <li><a data-scroll href="{% url 'actionplan:home' %}">About</a></li>
-            <li><a data-scroll href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
-            <li><a data-scroll href="{% url 'actionplan:home' %}">Sectors</a></li>
-            <li><a class="active" data-scroll href="{% url 'actionplan:incentives' %}">Incentives</a></li>
-            <li><a data-scroll href="{% url 'actionplan:structure' %}">Structure</a></li>
-            <li><a data-scroll href="{% url 'actionplan:partners' %}">Partners</a></li>
-            <li><a data-scroll href="{% url 'actionplan:home' %}">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- /main nav -->
-      </div>
-    </header>
-
-    <section id="our-team" class="section">
-      <div class="container">
-        <div class="row">
-          <!-- section title -->
-          <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
-            <h2>Our<span class="color"> Incentives</span></h2>
-            <div class="border"></div>
-          </div>
-          <!-- /section title -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/1.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    ACTION PLAN IS ONE OF THE BEST PLATFORMS TO GET YOUR SOCIAL
-                    STARTUP FEATURED IN MEDIA. STARTUP WITH INNOVATIVE IDEAS
-                    WILL GET A POPULARITY THROUGH NEWSPAPERS, MAGAZINES,
-                    WEBSITES, RADIO, TV AND SOCIAL MEDIA.
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Pre-Incubation</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div
-            class="col-md-4 wow fadeInDown"
-            data-wow-duration="500ms"
-            data-wow-delay="200ms"
-          >
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/2.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    CASH PRIZE OF INR 3 LAKHS FOR THE WINNERS OF THE
-                    COMPETITION!
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Cash Prize</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div
-            class="col-md-4 wow fadeInDown"
-            data-wow-duration="500ms"
-            data-wow-delay="400ms"
-          >
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/3.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    SELECTED TEAMS GET TO WORK ON SOCIAL ISSUES IN COLLABORATION
-                    WITH ICICI FOUNDATION!
-                  </p>
-                  >
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Internships at ICIC Foundation</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div
-            class="col-md-4 wow fadeInDown"
-            data-wow-duration="500ms"
-            data-wow-delay="600ms"
-          >
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/4.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    A-PLAN HAS THE WIDE DOMAIN OF INDIA’S BEST SOCIAL
-                    INCUBATORS. PARTICIPANTS WILL GET AN OPPORTUNITY OF GETTING
-                    PRE-INCUBATION, INCUBATION, COACHING AND DEVELOPING
-                    CONNECTIONS WITH BUSINESS EXPERTS. PARTICIPANTS WILL GET AN
-                    ENVIRONMENT TO TRANSLATE KNOWLEDGE AND INNOVATION INTO THE
-                    CREATION OF SUCCESSFUL ENTREPRENEURS.
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Incubation Opportunity</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/5.jpeg' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    ADDITIONAL FOCUSED MENTORING FROM EXPERIENCED PEOPLE IS
-                    HELPFUL AT EACH STEP OF A START-UP. SO, A-PLAN GIVES EVERY
-                    SECOND ROUND QUALIFIED TEAM TASTE OF ITS UNMATCHED DUAL
-                    MENTORSHIP (TECHNICAL + BUSINESS) PROGRAM TO HELP YOU
-                    DEVELOP MANY FOLDS DURING A-PLAN. A HEALTHY MENTOR-MENTEE
-                    RELATION IS ENSURED BY TIMELY FEEDBACK FROM BOTH.
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Professional Mentorship</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/6.jpg' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    A WORKSHOP IS A PATH THAT INTRODUCES YOU TO THE EXPERIENCE
-                    OF BEING AN ENTREPRENEUR. IT PROVIDES A PLATFORM TO
-                    INTRODUCE ASPIRING INDIVIDUALS TO THE ENTREPRENEURIAL
-                    MINDSET AND DEVELOP CREATIVE PROBLEM FINDING AND SOLVING
-                    SKILLS REQUIRED IN THE FIELD OF ENTREPRENEURIAL BUSINESSES
-                    OR SOCIAL ENTERPRISES.
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Workshops</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/7.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    ACTION PLAN HAS A GREAT NETWORK OF INVESTORS ACROSS INDIA.
-                    GET A CHANCE TO PITCH IN FRONT OF TOP INVESTORS OF INDIA, AN
-                    OPPORTUNITY TO INTERACT WITH THEM AND GET SEED FUNDING.
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Investors</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/8.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    TOP 3 TEAMS WILL GET AN OPPORTUNITY TO GET EXPERT GUIDANCE
-                    THROUGH A MENTORSHIP PROGRAM BY iB HUBS AND CONTINUE TO
-                    LEARN FURTHER AFTER THE CONCLUSION OF ACTION PLAN 2020-21
-                  </p>
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Mentorship Program'20</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-
-          <!-- team member -->
-          <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo">
-                <!-- member photo -->
-                <img
-                  class="img-responsive"
-                  src="{% static 'images/Incentives/9.png' %}"
-                  alt="Meghna"
-                />
-                <!-- /member photo -->
-
-                <!-- member social profile -->
-                <div class="mask">
-                  <p>
-                    ACTION PLAN IS ONE OF THE BEST PLATFORMS TO GET YOUR SOCIAL
-                    STARTUP FEATURED IN MEDIA. STARTUP WITH INNOVATIVE IDEAS
-                    WILL GET A POPULARITY THROUGH NEWSPAPERS, MAGAZINES,
-                    WEBSITES, RADIO, TV AND SOCIAL MEDIA.
-                  </p>
-                  >
-                </div>
-                <!-- /member social profile -->
-              </div>
-
-              <!-- member name & designation -->
-              <div class="member-meta">
-                <h4>Media Coverage</h4>
-              </div>
-              <!-- /member name & designation -->
-              <!-- /about member -->
-            </div>
-          </div>
-          <!-- end team member -->
-        </div>
-        <!-- End row -->
-      </div>
-      <!-- End container -->
-    </section>
-    <!-- End section -->
-<footer class="bg-one">
-      <div class="container">
-        <div class="row wow fadeInUp" data-wow-duration="500ms">
-          <div class="col-lg-12">
-            <!-- copyright -->
-            <div class="copyright text-center">
-              <div class="rights">
-                <p>&copy 2020 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
-              </div>
-              <!-- Footer Social Links -->
-              <div class="social-icon">
-                <ul class="list-inline">
-                  <li>
-                    <a href="#"><i class="tf-ion-social-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!--/. End Footer Social Links -->
-            </div>
-            <!-- /copyright -->
-          </div>
-          <!-- end col lg 12 -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </footer>
-      
+    <link rel="stylesheet" href="incentives.css">
+</head>
+<body>
     
-      <!-- end footer -->
+
+  <div class="content">
+    <h1 class="heading">Incentives</h1>
+    <p class="description"></p>
+      </p><a class="card" href="#!">
+      <div class="front" >
+        <p>UPSCALE bootcamp</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>An opportunity to get  advanced entrepreneurship bootcamp to help scaleup your startup.</p>
+        
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x402)">
+        <p>Entrepreneurship bootcamp</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>A comprehensive bootcamp by Casi Global to guide you through your startup journey
+          </p>
+
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x403)">
+        <p>Pre-incubation</p>
+      </div>
+      <div class="back">
+        <div>
+          <p style="font-size: smaller;"> TOP FINALIST TEAMS SHALL GET THE OPPORTUNITY TO GET 3 MONTHS LONG PRE INCUBATION AT TBI-BITS Pilani Hyderabad AND SUBSEQUENTLY A PITCHING OPPORTUNITY TO FURTHER AVAIL INCUBATION SUPPORT ( THE PARTICULAR TEAMS SELECTED SHALL BE AT THE DISCRETION OF TBI-BITS Pilani Hyderabad.</p>
+        
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x404)">
+        <p>Bonus credits</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Credits of upto 1000USD to be awarded to the top participant</p>
+         
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x405)">
+        <p>Accelaration program</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>25% off on hyper accelerator program of StartupBay worth 1400$ to 2 of the top participants/p>
+        
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x406)">
+        <p>Innovation support</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Top participants would be provided with UI/UX support by Avas Digitech’s Sparkinov open innovation</p>
+       
+        </div>
+      </div></a>
+      <a class="card" href="#!">
+        <div class="front">
+          <p>Cash Prize</p>
+        </div>
+        <div class="back">
+          <div>
+            <p>CASH PRIZE OF INR 3 LAKHS FOR THE WINNERS OF THE COMPETITION!
+              <br>Winner:1.5 Lakhs
+              <br>Runner-Up:1 Lakh
+              <bold>Second Runner-Up</bold>:0.5 Lakh
+            </p>
+          </div>
+        </div></a>
+      <a class="card" href="#!">
+        <div class="front" style="background-image: url(//source.unsplash.com/300x406)">
+          <p>Mentorship program '20</p>
+        </div>
+        <div class="back">
+          <div>
+            <p>3 of the TOP TEAMS WILL receive a free mentorship session worth INR 15000 provided by Startup Xperts after the competition to continue their learning and growth</p>
       
-  </body>
+          </div>
+        </div></a>
+        <a class="card" href="#!">
+          <div class="front" style="background-image: url(//source.unsplash.com/300x406)">
+            <p>Networking opportunities</p>
+          </div>
+          <div class="back">
+            <div>
+              <p>GET An opoourtunity to network with Action plan’s excellent partner base spread across Asia, Europe and North America.
+              </p>
+      
+            </div>
+          </div></a>
+          <a class="card" href="#!">
+            <div class="front">
+              <p>Expert Mentorship by iB Hub</p>
+            </div>
+            <div class="back">
+              <div>
+                <p style="font-size: smaller;">TOP 3 TEAMS WILL GET AN OPPORTUNITY TO GET EXPERT GUIDANCE THROUGH A MENTORSHIP PROGRAM BY iB HUBS AND CONTINUE TO LEARN FURTHER AFTER THE CONCLUSION OF ACTION PLAN 2021-22
+                </p>
+              </div>
+            </div></a>
+            <a class="card" href="#!">
+              <div class="front">
+                <p>Investors</p>
+              </div>
+              <div class="back">
+                <div>
+                  <p>ACTION PLAN HAS A GREAT NETWORK OF INVESTORS ACROSS INDIA. GET A CHANCE TO PITCH IN FRONT OF TOP INVESTORS OF INDIA, AN OPPORTUNITY TO INTERACT WITH THEM AND GET SEED FUNDING.
+                  </p>
+                </div>
+              </div></a>
+              <a class="card" href="#!">
+                <div class="front" style="background-image:url('img/Untitled-1.jpg')">
+                  <p>Media Coverage</p>
+                </div>
+                <div class="back">
+                  <div>
+                    <p>Action Plan is one of the best platforms to get your social startup featured in media. Startup with innovative ideas will get a popularity through Newspapers, Magazines, Websites, Radio, TV and Social Media.
+                    </p>
+                  </div>
+                </div></a>
+                <a class="card" href="#!">
+                  <div class="front">
+                    <p>Incubation Opportunity</p>
+                  </div>
+                  <div class="back">
+                    <div>
+                      <p>Action Plan is one of the best platforms to get your social startup featured in media. Startup with innovative ideas will get a popularity through Newspapers, Magazines, Websites, Radio, TV and Social Media.
+                      </p>
+                    </div>
+                  </div></a>
+                  <a class="card" href="#!">
+                    <div class="front" >
+                      <p>Professional Mentorship</p>
+                    </div>
+                    <div class="back">
+                      <div>
+                        <p style="font-size: 14px;">A-PLAN HAS THE WIDE DOMAIN OF INDIA’S BEST SOCIAL INCUBATORS. PARTICIPANTS WILL GET AN OPPORTUNITY OF GETTING PRE-INCUBATION, INCUBATION, COACHING AND DEVELOPING CONNECTIONS WITH BUSINESS EXPERTS. PARTICIPANTS WILL GET AN ENVIRONMENT TO TRANSLATE KNOWLEDGE AND INNOVATION INTO THE CREATION OF SUCCESSFUL ENTREPRENEURS.
+                        </p>
+                      </div>
+                    </div></a>
+                    <a class="card" href="#!">
+                      <div class="front" >
+                        <p>Workshops</p>
+                      </div>
+                      <div class="back">
+                        <div>
+                          <p style="font-size: 14px;">A WORKSHOP IS A PATH THAT INTRODUCES YOU TO THE EXPERIENCE OF BEING AN ENTREPRENEUR. IT PROVIDES A PLATFORM TO INTRODUCE ASPIRING INDIVIDUALS TO THE ENTREPRENEURIAL MINDSET AND DEVELOP CREATIVE PROBLEM FINDING AND SOLVING SKILLS REQUIRED IN THE FIELD OF ENTREPRENEURIAL BUSINESSES OR SOCIAL ENTERPRISES.
+                          </p>
+                        </div>
+                      </div></a>
+  </div>
+        
+</body>
 </html>
