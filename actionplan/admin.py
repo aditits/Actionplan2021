@@ -19,7 +19,7 @@ class CustomUserAdmin(UserAdmin):
                 'team_leader_emailID',
                 'team_leader_phone_number',
                 'phone_number_alternate',
-                'college_name',
+                'name_of_organisation',
                 'is_startup',
                 'city_name',
                 'team_member2_name',
@@ -29,9 +29,9 @@ class CustomUserAdmin(UserAdmin):
                 'team_member6_name',
                 'team_member7_name',
                 'team_member8_name',
-                'internet_connectivity',
-                'one_member_details_name',
-                'one_member_details_email',
+                'sectors_selection',
+                'alternate_member_details_name',
+                'alternate_member_details_email',
                 'referral_code'
             )
         }

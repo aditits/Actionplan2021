@@ -34,7 +34,6 @@ class Mentor(models.Model):
     state                   = models.CharField(max_length=100)
     current_portfolio       = models.URLField(max_length=200)
     linkedIn_ID             = models.URLField(max_length=200)
-    skype_ID                = models.URLField(max_length=200)
     work_timeline           = models.CharField(max_length=500)
     description             = models.TextField(gettext_lazy('description'), max_length=500, blank=True)
     phonenumber_permissions = models.CharField(choices=PhoneNumber_Permissions, max_length=200)

@@ -85,7 +85,7 @@ def TeamEditView(request):
         if form.is_valid():
             instance = form.save(commit=False)
             instance.save()
-            return redirect('actionplan:team-edit')
+            return redirect('actionplan:dashboard')
     else:
         form = TeamEditForm(instance=instance)
     return render(request, "team_edit.html", {'form': form})

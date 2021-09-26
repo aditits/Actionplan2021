@@ -140,3 +140,5 @@ oyo/qa.py
 zappa_settings.json
 
 test_data/sample_data_v1.xlsx
+
+actionplan/credentials.py
