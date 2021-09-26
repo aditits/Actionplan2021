@@ -1,0 +1,775 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png"  />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>sectors</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+body{
+    background-color: transparent;
+    background: url('https://i.imgur.com/ApQKtQZ.jpeg') fixed no-repeat;
+    background-size: cover;
+    max-height: 300rem;
+    border: 15px solid transparent !important;
+    -o-border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+       border-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(37.8%, rgb(245, 245, 245)),color-stop(48.8%, rgb(245, 245, 245)),color-stop(53.1%, rgb(254, 254, 254)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75))) !important;
+       border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+    border-image-slice: 1 !important;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+a:hover{
+  opacity: 1;
+  color: black;
+}
+/*----------------
+Push Bar
+------------------*/
+.bar-cont{
+    position: relative;
+    top: -215px;
+}
+
+.push-bar{
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.creator{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.creator #codepen{
+  text-align: center;
+  font-size: 180px;
+  margin-top: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 5px grey;
+          box-shadow: 0px 8px 5px grey;
+}
+
+
+.arrow{
+	margin: auto;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+    max-width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+    background-color: black;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-animation: blockAppear .6s ease-in-out;
+            animation: blockAppear .6s ease-in-out;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+	40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+	60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+	40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+	60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+/*-----------------
+Cards
+------------------*/
+.main-cont{
+    padding: 0;
+    margin: 0;
+    top: -215px;
+}
+
+.news-row {
+	margin: 0;
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.news-block{
+    margin: auto;
+    padding: 0;
+    background-color: transparent;
+    max-width: 1060px;
+    min-width: 100px;
+    border: 20px solid transparent;
+    -o-border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+       border-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(37.8%, rgb(245, 245, 245)),color-stop(48.8%, rgb(245, 245, 245)),color-stop(53.1%, rgb(254, 254, 254)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75))) !important;
+       border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+    border-image-slice: 1 !important;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-animation: blockAppear .6s ease-in-out;
+            animation: blockAppear .6s ease-in-out;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.underlay{
+  /*display: none;*/
+  margin: 0;
+  padding: 0;
+  max-height: 350px;
+  max-width: 340px;
+}
+
+.card{
+    margin: 0;
+    width: 340px;
+    max-height: 350px;
+    max-width: 340px;
+    background-color: transparent;
+    border: 20px solid transparent !important;
+    -o-border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+       border-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75))) !important;
+       border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
+    border-image-slice: 1 !important;
+    -webkit-transition: -webkit-transform 0.6s ease;
+    transition: -webkit-transform 0.6s ease;
+    transition: transform 0.6s ease;
+    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+    -webkit-animation: blockAppear .6s ease-in-out;
+            animation: blockAppear .6s ease-in-out;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+}
+
+@-webkit-keyframes blockAppear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) ;
+            transform: translateY(20px) ;
+  }
+  ready.css:1
+  40% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-box-shadow: 0 10px 35px rgba(0,0,0,.15), 0 1px 0 rgba(0,0,0,.15);
+            box-shadow: 0 10px 35px rgba(0,0,0,.15), 0 1px 0 rgba(0,0,0,.15);
+  }
+  ready.css:1
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  ready.css:1
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes blockAppear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) ;
+            transform: translateY(20px) ;
+  }
+  ready.css:1
+  40% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-box-shadow: 0 10px 35px rgba(0,0,0,.15), 0 1px 0 rgba(0,0,0,.15);
+            box-shadow: 0 10px 35px rgba(0,0,0,.15), 0 1px 0 rgba(0,0,0,.15);
+  }
+  ready.css:1
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  ready.css:1
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.card:hover{
+    z-index: 999;
+    max-height: 800px;
+    width: 400px;
+    max-width: 400px;
+    border: none !important;
+    border-right: 60px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+    margin-right: -20px;
+	  -webkit-transform:  translate(-30px, -50px);
+	          transform:  translate(-30px, -50px);
+}
+
+.card:before{
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  -webkit-transition: -webkit-box-shadow 0.6s ease;
+  transition: -webkit-box-shadow 0.6s ease;
+  transition: box-shadow 0.6s ease;
+  transition: box-shadow 0.6s ease, -webkit-box-shadow 0.6s ease;
+}
+
+.card:hover:before
+{
+  max-width: 300px;
+  -webkit-box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
+          box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
+}
+
+.card:hover .card-img-top{
+	height: 300px;
+}
+
+.card:hover .card-block {
+  width: 300px;
+	background-image: -webkit-gradient(linear,right bottom, left top,from(rgb(72, 85, 108)),color-stop(50%, rgb(27, 33, 43)),color-stop(51%, rgb(20, 25, 34)),to(rgb(53, 59, 69)));
+	background-image: linear-gradient(to top left,rgb(72, 85, 108) 0%,rgb(27, 33, 43) 50%,rgb(20, 25, 34) 51%,rgb(53, 59, 69) 100%);
+}
+
+.card:hover .card-title{
+    color: white;
+}
+
+.card:hover .card-text{
+	  /*display: block !important;*/
+    color: white;
+}
+
+.card-block{
+    background-color: transparent;
+    background-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(37.8%, rgb(245, 245, 245)),color-stop(48.8%, rgb(245, 245, 245)),color-stop(53.1%, rgb(254, 254, 254)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75)));
+    background-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%);
+    background-repeat: no-repeat;
+}
+
+.card-text {
+	display: none;
+}
+
+.card-img-top{
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    -webkit-transition: height 0.8s ease;
+    transition: height 0.8s ease;
+}
+
+@media (max-width: 1120px){
+    .bar-cont{
+        width: 100%;
+    }
+    .news-block{
+       max-width: 720px;
+    }
+    .card:hover{
+      margin-right: -20px;
+    }
+    .card:hover .card-block{
+      width: 300px;
+    }
+}
+
+@media (max-width: 800px){
+    .news-block{
+       min-width: 380px;
+    }
+    .card:hover{
+      border-left: 20px solid transparent !important;
+      margin-right: -40px;
+      -webkit-transform:  translate(0, -50px);
+              transform:  translate(0, -50px);
+    }
+    .card:hover:before{
+      -webkit-box-shadow: 0px 60px 40px RGBA(142, 142, 142, .5);
+              box-shadow: 0px 60px 40px RGBA(142, 142, 142, .5);
+    }
+    .card:hover .card-block{
+      width: 300px;
+    }
+}
+
+@media (max-width: 580px){
+  .news-block{
+     max-width: 380px;
+  }
+}
+/*-----------------
+Pixel Grid
+------------------*/
+.pixel-grid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 15;
+  opacity: .2;
+  display: none;
+}
+
+#toggle-grid{
+  position: fixed;
+  top: 150px;
+  right: 2px;
+  z-index: 16;
+  color: white;
+  display: inline-block;
+  /*border: 2px ridge white;*/
+  font-size: 1.8em;
+  width: 1.8em;
+  text-align: center;
+  line-height: 1.85em;
+  background: #666;
+  border-radius: 50%; /* or 50% width & line-height */
+  opacity: .3;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+  display: none;
+}
+
+#toggle-grid:hover{
+  cursor: pointer;
+  background: repeating-linear-gradient(to bottom right,rgb(0, 0, 0) 0%,rgb(226, 226, 226) 61.4%,rgb(226, 226, 226) 66.9%,rgb(226, 226, 226) 76.6%,rgb(226, 226, 226) 88.7%,rgb(255, 255, 255) 100%);
+}
+
+.orange{
+  color: orange !important;
+  -webkit-box-shadow: 2px 2px 3px #888;
+          box-shadow: 2px 2px 3px #888;
+  opacity: 1 !important;
+}
+/*------------------*/
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <html>
+<head>
+<title>Newsfeed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+<!--======Pixel Grid======-->
+
+<!------------------------->
+<!--======Push Menu======-->
+     <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">About</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
+            <li><a class="nav-link scrollto " href="{% url 'actionplan:structure' %}">Structure</a></li>
+          
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Partners</a></li>
+           <li><a class="nav-link scrollto" href="{% url 'actionplan:home' #contact %}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+    
+<div class="container bar-cont">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 push-bar">
+          <div class="creator">
+            <a  target="_blank"></a>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      
+    </div>
+</div>
+<!------------------------->
+<!--========Cards========-->
+<div class="container-fluid main-cont">
+    <div class="row news-row">
+        <div class="container-fluid col-md-12 col-sm-6 justify-content-center news-block">
+            <div class="card-group">
+              <div class="underlay">
+                <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/wLMJQPH.png')"></div>
+                    <div class="card-block" >
+                    <h5 class="card-title" style="font-family: 'Anton', sans-serif">5 RS (REDUCE, REUSE, RECYCLE, RECOVER, REFUSE)<hr></h5>
+                    <p class="card-text" >Sanitation, models to reuse, reduce, recycle and recover waste,
+                      technology and digital innovations to substitute manual
+                      scavenging and reducing the impact of climate change</p>
+                    </div>
+                </div>
+              </div>
+              <div class="underlay">
+               <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/tT6Bxay.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">FINANCIAL INCLUSION<hr></h5>
+                      <p class="card-text" >     “It is making financial services available to each and everyone,
+                        via digital payments, micro-lending, peer to peer lending, etc.”
+                        This will include startups aiming at developing policies for
+                        financially weak people.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/n6b2rib.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">SUSTAINABLE ENERGY<hr></h5>
+                      <p class="card-text" >Maintaining, or generating energy from cleaner fuels, improving
+                        existing solutions, developing sustainable methods and educating
+                        people on the same.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/ssMsuUO.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">AGRICULTURE<hr></h5>
+                      <p class="card-text" >70 percent of India’s rural households still primarily depend on
+                        agriculture. Thus, we need startups that can aid this large mass
+                        of our population.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/yAFDnZ1.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">WATER MANAGEMENT<hr></h5>
+                      <p class="card-text" > "According to a recent report of NITI aayog, “21 of the major
+                        Indian cities will run out of water by 2020. Thus, this sector
+                        will focus on ways to provide and supply clean drinking water.”</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/5rgwfW6.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EMPLOYIBILITY<hr></h5>
+                      <p class="card-text" > Our country is facing problems regarding Employability.This
+                        sector is for startups that can act as an employment source in
+                        rural areas, or for less-educated people.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/WaGs6zS.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">HEALTH<hr></h5>
+                      <p class="card-text" >   Seeking Start-Ups tackling malnutrition, providing digital
+                        platforms for availing health services, hygiene and sanitation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">WOMEN EMPOWERMENT<hr></h5>
+                      <p class="card-text" >Encouraging startups providing regional rights and facilities,
+                        security and protection, employment and employability to women,
+                        to register under this sector</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">POLLUTION<hr></h5>
+                      <p class="card-text" >“Introducing this sector to come up with technologies that aid
+                        people in fighting pollution for the time needed to shift to
+                        clean energy fuels” and to improve the existing condition.</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EDUCATION<hr></h5>
+                      <p class="card-text" >Startups aiming at improving the quality of primary education,
+                        creating or prototyping Learning Management Systems (LMS),
+                        practical learning aspect of secondary education and enhancing
+                        vocational education and other digital innovations.</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">SECURITY<hr></h5>
+                      <p class="card-text" >Startups aiming at increasing the security for online users, creating or prototyping physical or cyber security systems.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/Hp8NxLI.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">RURAL DEVELOPMENT<hr></h5>
+                      <p class="card-text" >  Startups helping in reducing the gap between rural and urban areas by developing the rural areas, in terms of health, poverty, literacy and infrastructure.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------>
+<!--=======Scripts======-->
+<script src="{% static 'jquery-3.1.1.min.js' %}"></script>
+<script name="toggle-grid" type="text/javascript">
+$(document).ready(function(){
+  $(document).on("keypress", function(event) {
+    // If 'alt + g' keys are pressed:
+    if (event.which === 169){
+        $('#toggle-grid').toggle();
+     }
+  });
+
+  $('#toggle-grid').on("click"
+  , function() {
+      $('.pixel-grid').toggle();
+      $('#toggle-grid').toggleClass('orange');
+    });
+});
+</script>
+</body>
+</html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+var main = function () {
+  $('.push-bar').on('click', function (event) {
+    if (!isClicked) {
+      event.preventDefault();
+      $('.arrow').trigger('click');
+      isClicked = true;
+    }
+  });
+
+  $('.arrow').css({
+    'animation': 'bounce 2s infinite' });
+
+  $('.arrow').on("mouseenter", function () {
+    $('.arrow').css({
+      'animation': '',
+      'transform': 'rotate(180deg)',
+      'background-color': 'black' });
+
+  });
+  $('.arrow').on("mouseleave", function () {
+    if (!isClicked) {
+      $('.arrow').css({
+        'transform': 'rotate(0deg)',
+        'background-color': 'black' });
+
+    }
+  });
+
+  var isClicked = false;
+
+  $('.arrow').on("click", function () {
+    if (!isClicked) {
+      isClicked = true;
+      $('.arrow').css({
+        'transform': 'rotate(180deg)',
+        'background-color': 'black' });
+
+
+      $('.bar-cont').animate({
+        top: "-15px" },
+      300);
+      $('.main-cont').animate({
+        top: "0px" },
+      300);
+      // $('.news-block').css({'border': '0'});
+      // $('.underlay').slideDown(1000);
+
+    } else
+    if (isClicked) {
+      isClicked = false;
+      $('.arrow').css({
+        'transform': 'rotate(0deg)', 'background-color': 'black' });
+
+
+      $('.bar-cont').animate({
+        top: "-215px" },
+      300);
+      $('.main-cont').animate({
+        top: "-215px" },
+      300);
+    }
+    console.log('isClicked= ' + isClicked);
+  });
+
+  $('.card').on('mouseenter', function () {
+    $(this).find('.card-text').slideDown(300);
+  });
+
+  $('.card').on('mouseleave', function (event) {
+    $(this).find('.card-text').css({
+      'display': 'none' });
+
+  });
+};
+
+$(document).ready(main);
+//# sourceURL=pen.js
+    </script>
+
+  
+ <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+     <script
+      type="text/javascript"
+      src="{% static 'assets/count-to/jquery.countTo.js' %}"
+    ></script>
+    <!-- wow.min Script -->
+    <script type="text/javascript" src="{% static 'assets/wow/dist/wow.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+ <script src="{% static 'assets/js/icon.js' %}'"></script>
+</body>
+
+</html>
+ 

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="Meghna One page parallax responsive HTML Template "
+    />
+
+    <meta name="author" content="Muhammad Morshed" />
+
+    <title>Action Plan | Abhyuday,IIT Bombay</title>
+
+    <!-- Mobile Specific Meta
+		================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon_blue.png' %}" />
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}" />
+    <!-- bootstrap.min css -->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}" />
+    <!-- Magnific popup css -->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/magnific-popup/dist/magnific-popup.css' %}"
+    />
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{% static 'plugins/slick-carousel/slick/slick.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/slick-carousel/slick/slick-theme.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="{% static 'assets/js/font.js' %}"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css1/style.css' %}" />
+  </head>
+
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="navigation" class="navbar navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- responsive nav button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- /responsive nav button -->
+
+          <!-- logo -->
+           <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt=""/>
+          <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+          <ul id="nav" class="nav navbar-nav navigation-menu">
+            <li><a data-scroll href="{% url 'actionplan:home' %}">Home</a></li>
+            <li><a data-scroll href="{% url 'actionplan:home' #about %}">Action Plan</a></li>
+            <li><a data-scroll href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
+            <li><a data-scroll href="{% url 'actionplan:home' #services %}">Sectors</a></li>
+            <li><a data-scroll href="{% url 'actionplan:incentives' %}">Incentives</a></li>
+            <li><a data-scroll href="{% url 'actionplan:structure' %}">Structure</a></li>
+            <li>
+              <a class="active" data-scroll href="{% url 'actionplan:partners' %}">Partners</a>
+            </li>
+            <li><a data-scroll href="{% url 'actionplan:home' #contact %}">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- /main nav -->
+      </div>
+    </header>
+
+    <!-- Start Portfolio Section
+		=========================================== -->
+
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- section title -->
+            <div class="title text-center">
+              <h2>Our <span class="color">Partners</span></h2>
+              <div class="border"></div>
+            </div>
+            <!-- /section title -->
+          </div>
+          <!-- /end col-lg-12 -->
+        </div>
+        <!-- end row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="portfolio-filter">
+              <button type="button" data-filter="all">All</button>
+              <button type="button" data-filter=".incubation">
+                Incubation Partners
+              </button>
+              <button type="button" data-filter=".design">
+                Investor Partners
+              </button>
+              <button type="button" data-filter=".knowledge">
+                Knowledge Partners
+              </button>
+              <button type="button" data-filter=".merchandise">
+                Merchandise Partners
+              </button>
+              <button type="button" data-filter=".media">Media Partners</button>
+              <button type="button" data-filter=".outreach">
+                Outreach Partners
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row portfolio-items-wrapper">
+          <div class="mix col-md-3 incubation">
+            <a href="https://www.dei.ac.in/dei/">
+              <img
+                class="img-responsive"
+                src="{% static 'images/Ads/Incubation-Partners/IPP1.jpg' %}"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IPP2.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP4.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP5.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP6.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP7.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP8.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP9.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP10.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP11.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP12.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 incubation">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Incubation-Partners/IP13.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 design">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Investor-Partners/IV1.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 design">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Investor-Partners/IV2.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 design">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Investor-Partners/IV3.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 design">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Investor-Partners/IV4.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP1.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP2.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP3.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP4.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP5.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP6.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP7.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 knowledge">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Knowledge-Partners/KP8.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 merchandise">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Merchandise-Partners/MP1.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP1.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP2.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP3.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP4.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP5.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP6.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP7.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP8.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP9.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP10.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP11.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP12.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 media">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Media-Partners/MP13.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/11.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/127.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/127.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/127.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/137.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/157.jpg' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/18.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/4.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/5.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="mix col-md-3 outreach">
+            <img
+              class="img-responsive"
+              src="{% static 'images/Ads/Outreach-Partners/8.png' %}"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+      
+
+    <!-- End section -->
+
+    
+    <footer  class="bg-one">
+      <div class="container">
+        <div class="row">
+            <!-- copyright -->
+            <div class="co-md-6 copyright">
+              <div class="rights">
+                <p>&copy 2020 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
+              </div>
+              </div>
+              <!-- Footer Social Links -->
+              <div class="col-md-6 social-icon">
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="tf-ion-social-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!--/. End Footer Social Links -->
+            
+            <!-- /copyright -->
+          </div>
+          
+        </div>
+        <!-- end row -->
+      <!-- end container -->
+    </footer>
+      
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery/dist/jquery.min.js' %}"
+    ></script>
+    <!-- Bootstrap 3.1 -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap/dist/js/bootstrap.min.js' %}"
+    ></script>
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/slick-carousel/slick/slick.min.js' %}"
+    ></script>
+    <!-- Portfolio Filtering -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/mixitup/dist/mixitup.min.js' %}"
+    ></script>
+    <!-- Smooth Scroll -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/smooth-scroll/dist/js/smooth-scroll.min.js' %}"
+    ></script>
+    <!-- Magnific popup -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/magnific-popup/dist/jquery.magnific-popup.min.js' %}"
+    ></script>
+    <!-- Sticky Nav -->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/Sticky/jquery.sticky.js' %}"
+    ></script>
+    <!-- wow.min Script -->
+    <script type="text/javascript" src="{% static 'plugins/wow/dist/wow.min.js' %}"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="{% static 'assets/js/script1.js' %}"></script>
+  </body>
+</html>

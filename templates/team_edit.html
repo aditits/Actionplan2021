@@ -1,0 +1,233 @@
+<!-- <html>
+<form method="POST" action="{% url 'actionplan:team-edit' %}" >
+    {% csrf_token %}
+    {{ form }}
+<input type="submit" value="Update"/>
+</form>
+</html -->
+{% load static %}
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    {% block content %}
+    <nav class="navbar navbar-inverse" style="background-color: #2E373C;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="{% static 'logo.png' %}" class="img-fluid" alt="logo" width="10%" style="margin-bottom: 0px;">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li> -->
+
+                </ul>
+            </div>
+    </nav>
+
+    <!-- {% if submitted %}
+    <p class="success">
+        Your message was submitted successfully. Thank you.
+    </p>
+
+    {% else %} -->
+
+    <!-- <form method="POST" action="{% url 'actionplan:mentor-register' %}"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto p-0">
+                <div class="card">
+                    <form method="POST" action="" novalidate>
+                        {% csrf_token %}
+                        <h1>Team Update Form</h1>
+
+                        <style>
+                            @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
+                            @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+
+                            body {
+                                font-family: "Quattrocento Sans", sans-serif;
+                                background: url("/static/3.jpg") no-repeat center center fixed;
+                                -webkit-background-size: cover;
+                                -moz-background-size: cover;
+                                -o-background-size: cover;
+                                background-size: cover;
+
+                                /* color: #fff; */
+
+                                /* background-color: #25282b; */
+
+                            }
+
+                            h1 {
+                                font-size: 50px;
+
+
+                            }
+
+                            p {
+                                font-family: "Quattrocento Sans", sans-serif;
+                                font-size: 16px;
+
+
+
+                            }
+
+                            ul.errorlist {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            .card {
+                                margin-top: 100px;
+                                width: 100%;
+                                border-radius: 10px;
+
+                                position: relative;
+                                margin-inline-start: 300px;
+                                box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+                                display: block;
+                                justify-content: space-between;
+                                justify-self: center;
+                                align-self: center;
+                                align-content: center;
+                                /* background-color: white; */
+                                background-color: rgba(245, 245, 245, 0.4);
+                                margin-bottom: 200px;
+                                border: none
+                            }
+
+                            .errorlist li {
+                                border: 1px solid red;
+                                color: red;
+                                background: rgba(255, 0, 0, 0.15);
+                                list-style-position: inside;
+                                display: block;
+                                font-size: 1.2em;
+                                margin: 0 0 3px;
+                                padding: 4px 5px;
+                                /* text-align: center; */
+                                border-radius: 3px;
+                            }
+
+                            form {
+                                vertical-align: middle;
+                                justify-content: space-between;
+                                display: inline-block;
+                                margin-left: 50px;
+                                margin-right: 50px;
+
+
+                            }
+
+                            input,
+                            textarea {
+                                /* margin:0 0 10px; */
+                                width: 100%;
+                                /* background-color: #898f92; */
+                                padding: 5px !important;
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                                border-radius: 3px;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-color: rgb(169, 169, 169);
+                                /* box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19); */
+                            }
+
+                            input {
+                                height: 30px;
+                                color: black;
+                            }
+
+                            .btn {
+                                display: flex;
+                                justify-content: center;
+                                line-height: 40px;
+                                padding: 0 30px;
+                                margin-bottom: 30px;
+                                -webkit-transition: all 0.4s ease;
+                                -o-transition: all 0.4s ease;
+                                -moz-transition: all 0.4s ease;
+                                transition: all 0.4s ease;
+                                cursor: pointer;
+                                font-size: 18px;
+                                color: #fff;
+                                /* font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif; */
+                            }
+
+                            .btn--radius {
+                                -webkit-border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                border-radius: 3px;
+                            }
+
+                            .btn--radius-2 {
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
+                            }
+
+                            .btn--pill {
+                                -webkit-border-radius: 20px;
+                                -moz-border-radius: 20px;
+                                border-radius: 20px;
+                            }
+
+
+                            .btn--blue {
+                                background: #2e2f30;
+                                border-color: black;
+                            }
+
+                            .btn--blue:hover {
+                                background: #d2eff0;
+                            }
+                        </style>
+
+                        {{ form.as_p }}
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- {% endif %} -->
+
+</body>
+
+<footer id="footer" style="color: #fff;">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="500ms">
+            <div class="col-lg-12">
+                <!-- copyright -->
+                <div class="copyright text-center">
+                    <div class="rights">
+                        <p>&copy 2020 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
+                    </div>
+                    <!-- Footer Social Links -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+{% endblock content %}
+
+</html>

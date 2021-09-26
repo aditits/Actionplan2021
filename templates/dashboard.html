@@ -1,0 +1,472 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dashboard | ActionPlan</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dashboard/css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'dashboard/css/light-box.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/b50c7a47f6.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="css/all.css"> -->
+        <link rel="stylesheet" href="{% static 'dashboard/css/templatemo-main.css' %}">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="dashboard/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- favicons -->
+    <link rel="shortcut icon" href="{% static 'dashboard/img/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'dashboard/img/favicon.png' %} type="image/x-icon">
+    </head>
+
+<body>
+    
+    <div class="sequence">
+  
+      <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator"><g fill="#F96D38"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/><path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/><path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/></g></svg>
+      </div>
+      
+    </div>
+    
+  
+        <nav>
+          <div class="logo">
+              <img src="{% static 'dashboard/img/logo.png' %}" width="80%" alt="">
+          </div>
+          <div class="mini-logo">
+              <img src="{% static 'dashboard/img/mini_logo.png' %}" alt="">
+          </div>
+          <ul>
+            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
+            <li><a href="#2"><i class="fas fa-book-reader"></i> <em>Guide</em></a></li>
+            <li><a href="#3"><i class="fa fa-pencil"></i><em>Stages</em></a></li>
+            <li><a href="#4"><i class="far fa-clipboard"></i><em>T&C</em></a></li>
+            <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
+          </ul>
+        </nav>
+        <style>
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card a {
+  color: inherit;
+}
+.blog-card a:hover {
+  color: #F9A826;
+}
+.blog-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "";
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #F9A826;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  color: #a2a2a2;
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #F9A826;
+  width: 35px;
+  top: -2.5rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+        </style>
+
+        
+        <div class="slides">
+          <div class="slide" id="1">
+            <div class="content first-content">
+              <div class="container-fluid">
+                  <div class="col-md-3">
+                      <div class="author-image"><img style="opacity: 0.85" src="{%  static 'dashboard/img/home.png' %}" alt=""></div>
+                  </div>
+                  <div class="col-md-9">
+                      <h2>Home</h2>
+                      <p><em>TEAM NAME -</em> Name<br><em>TEAM ID -</em>AP3456<br>
+                          Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. <em>Sed vehicula blandit augue,</em> eu maximus odio tempus vitae.</p>
+                      <div class="main-btn"><a href="{% url 'actionplan:team-edit' %}">Update Details</a></div>
+                      <div class="fb-btn"><a href="{% url 'actionplan:logout' %}">Logout</a></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="2">
+            <div class="content second-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h2>Instruction</h2> 
+                            <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>
+                            <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et <a href="#">placerat</a> molestie.</p>
+                            <p>Aliquam efficitur eu purus in interdum. <a href="#">Etiam tincidunt</a> magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-image">
+                          <img src="{% static 'dashboard/img/guide.png' %}" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="blog-card">
+                                <div class="meta">
+                                  <!-- <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div> -->
+                                  <div class="photo" style="background-image: url(dashboard/img/stage1.png)"></div>
+                                  <ul class="details">
+                                    <li class="date">Closes on Oct. 24, 2021</li>
+                                  </ul>
+                                </div>
+                                <div class="description">
+                                  <h1 style="font-size: 24px;
+                                  text-transform: uppercase;
+                                  font-weight: 700;">Stage 1</h1>
+                                  <h2 style="font-size: 1.2rem;padding-bottom: 0;
+                                  padding-top: 0.25rem;">Playbook Submission</h2>
+                                  <p style="  color: #a2a2a2;
+                                  "> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                                  <p class="read-more">
+                                    <a href="#">Add Submission</a>
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="blog-card alt">
+                                <div class="meta">
+                                  <div class="photo" style="background-image: url(dashboard/img/lock.png)"></div>
+                                  <ul class="details">
+                                    <li class="date">Unlocks on Oct. 24, 2021</li>
+                                  </ul>
+                                </div>
+                                <div class="description">
+                                    <h1 style="font-size: 24px;
+                                    text-transform: uppercase;
+                                    font-weight: 700;">Stage 2</h1>
+                                  <h2>Buisness Model Canvas Submission</h2>
+                                </div>
+                            </div>
+                            <div class="blog-card">
+                                <div class="meta">
+                                  <div class="photo" style="background-image: url(dashboard/img/lock2.png)"></div>
+                                  <ul class="details">
+                                    <li class="date">Unlocks on Oct. 24, 2021</li>
+                                  </ul>
+                                </div>
+                                <div class="description">
+                                    <h1 style="font-size: 24px;
+                                    text-transform: uppercase;
+                                    font-weight: 700;">Stage 3</h1>
+                                  <h2>Playbook Submission</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="4">
+            <div class="content second-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="left-content">
+                            <h2 style="margin-bottom: 0;">Terms And Conditions</h2> 
+                            <p>
+                              <ul style="list-style-type: circle; font-size: 13px;
+                              color: #fff;
+                              letter-spacing: 0.5px;
+                              font-weight: 300;
+                              line-height: 24px;
+                              margin-bottom: 30px;">
+                                  <li style="padding-bottom: 0.3rem">The Certificate of Organization as College Representative will be given only if he/she fulfills the necessary conditions.</li>
+                                  <li style="padding-bottom: 0.3rem">More than one CR team can be selected from a college depending upon the strength of the college.</li>
+                                  <li style="padding-bottom: 0.3rem">Abhyuday, IIT Bombay shall send all the publicity materials to the respective colleges, but will not be liable for extra cost incurred by the CR team.</li>
+                                  <li style="padding-bottom: 0.3rem">The Certificate of Appreciation shall be provided only on the successful completion of the complete term.</li>
+                                  <li style="padding-bottom: 0.3rem">Abhyuday, IIT Bombay can change the terms and conditions if deemed necessary.</li>
+                              </ul>
+                          </p>
+                            <!-- <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>
+                            <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et <a href="#">placerat</a> molestie.</p>
+                            <p>Aliquam efficitur eu purus in interdum. <a href="#">Etiam tincidunt</a> magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="5">
+            <div class="content fifth-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.357394097153!2d72.91197301476984!3d19.135826887053696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b93a6d2a5589%3A0xa8a562351797be4e!2sAbhyuday%20IIT%20BOMBAY!5e0!3m2!1sen!2sin!4v1632486416491!5m2!1sen!2sin" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="contact" action="" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="content">
+            <p> Follow Us &nbsp - &nbsp
+                <a href="https://twitter.com/Abhyuday_IITB" style="text-decoration:none; color: #F9A826"><i class="fa fa-twitter"></i></a> &nbsp
+                <a href="https://www.instagram.com/iitbombay_abhyuday/" style="text-decoration:none; color: #F9A826"><i class="fa fa-instagram"></i></a> &nbsp
+                <a href="https://www.facebook.com/abhyuday.iitb/" style="text-decoration:none; color: #F9A826"><i class="fa fa-facebook-f"></i></a> &nbsp
+                <a href="https://www.youtube.com/channel/UCFbU2VmJjC9QQuExaampqGA" style="text-decoration:none; color: #F9A826"><i class="fa fa-youtube"></i></a> &nbsp
+                <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/" style="text-decoration:none; color: #F9A826"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+          </div>
+        </div>
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static 'dashboard/js/vendor/jquery-1.11.2.min.js' %}"><\/script>')</script>
+
+    <script src="{% static 'dashboard/js/vendor/bootstrap.min.js' %}"></script>
+    
+    <script src="{% static 'dashboard/js/datepicker.js' %}"></script>
+    <script src="{% static 'dashboard/js/plugins.js' %}"></script>
+    <script src="{% static 'dashboard/js/main.js' %}"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>

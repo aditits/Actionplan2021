@@ -1,0 +1,197 @@
+{% load static %}
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="Meghna One page parallax responsive HTML Template "
+    />
+
+    <meta name="author" content="Muhammad Morshed" />
+
+    <title>Action Plan | Abhyuday,IIT Bombay</title>
+
+    <!-- Mobile Specific Meta
+		================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon_blue.png' %}" />
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}" />
+    <!-- bootstrap.min css -->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}" />
+    <!-- Magnific popup css -->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/magnific-popup/dist/magnific-popup.css' %}"
+    />
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{% static 'plugins/slick-carousel/slick/slick.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/slick-carousel/slick/slick-theme.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="{% static 'js/font.js' %}"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css1/style.css' %}" />
+  </head>
+
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="navigation" class="navbar navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- responsive nav button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- /responsive nav button -->
+
+          <!-- logo -->
+             <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt=""/>
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+          <ul id="nav" class="nav navbar-nav navigation-menu">
+            <li><a data-scroll href="{% url 'actionplan:home' %}">Home</a></li>
+            <li><a data-scroll href="{% url 'actionplan:home' #about %}">Action Plan</a></li>
+            <li><a class="active" data-scroll href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
+            <li><a data-scroll href="{% url 'actionplan:home' #services %}">Sectors</a></li>
+            <li><a data-scroll href="{% url 'actionplan:incentives' %}">Incentives</a></li>
+            <li><a data-scroll href="{% url 'actionplan:structure' %}">Structure</a></li>
+            <li><a data-scroll href="{% url 'actionplan:partners' %}">Partners</a></li>
+            <li><a data-scroll href="{% url 'actionplan:home' #contact-us %}">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- /main nav -->
+      </div>
+    </header>
+      
+    <section id="about" class="bg-one about section">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+            <h2><span class="color">Mentor</span>ship</h2>
+            <div class="border"></div>
+          </div>
+          <!-- /section title -->
+
+          <!-- About item -->
+          <div
+            class="box1 col-md-12 text-center wow fadeInUp"
+            data-wow-duration="500ms"
+          >
+            <div class="block">
+              <!-- Express About Yourself -->
+              <div class="content text-center">
+                <p style="font-size: 22px">
+                  We believe that young minds hold the key to solve numerous
+                  challenges that have plagued our society for so long. It’s the
+                  need of time to channelize this energy in the right direction
+                  which can definitely change the lives of people around us.
+                  Abhyuday 2020-21 brings to you, Action-Plan, the social
+                  entrepreneurship contest which revolves around the 3I’s
+                  mantra: Ideate - Innovate - Implement. In order to fulfil
+                  these dreams, Abhyuday IIT Bombay brings together the
+                  brightest from colleges, the best from corporate, the learnt
+                  from academia and the experienced from NGOs and creates a
+                  platform where young minds are nurtured to create solutions
+                  that have the potential to bring about grass root level
+                  changes.
+                </p>
+              </div>
+            </div>
+               <div class="btn1">
+            <a data-scroll href="{% url 'actionplan:mentor-register' %}" class="btn btn-transparent"
+              >REGISTER</a>
+          </div>
+          </div>
+            <!--
+          <div class="col-md-6 wow fadeInUp" data-wow-duration="500ms">
+            <img
+              class="poster-image"
+              src="images/Posters/Action-Plan.png"
+              alt=""
+            />
+          </div>
+-->
+          <!-- End About item -->
+
+          <!-- About item -->
+
+          <!-- End About item -->
+
+          <!-- About item -->
+            
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container -->
+        
+    </section>
+
+      <footer id="footer">
+      <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="500ms">
+          <div class="col-lg-12">
+            <!-- copyright -->
+            <div class="copyright text-center">
+              <div class="rights">
+                <p>&copy 2020 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
+              </div>
+              <!-- Footer Social Links -->
+              <div class="social-icon">
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="tf-ion-social-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="tf-ion-social-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!--/. End Footer Social Links -->
+            </div>
+            <!-- /copyright -->
+          </div>
+          <!-- end col lg 12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+  </body>
+</html>
