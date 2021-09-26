@@ -1077,6 +1077,7 @@ p {
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  color: black;
 }
 .testimonials .swiper-pagination {
   margin-top: 20px;
