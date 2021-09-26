@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
+
 from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm
 from django.contrib.auth import  logout, login
 from email.message import EmailMessage
@@ -113,3 +115,9 @@ def Sectors(request):
 
 def Structure(request):
     return render(request, 'structure.html')
+
+def HomeAboutView(request):
+    return redirect(reverse('actionplan:home') + '#about')
+
+def HomeContactView(request):
+    return redirect(reverse('actionplan:home') + '#contact-us')
