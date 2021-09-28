@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #16df7e;
+  background: #211f5e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #33eb92;
+  background: #211f5e;
   color: #fff;
 }
 .back-to-top.active {
@@ -88,8 +88,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size:22px;
 }
 .hero-area {
-  /*background-image: url("https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");*/
-  background-size: cover;
   height: 100vh;
   position: relative;
   display: -webkit-box;
@@ -159,11 +157,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-area .block .btn-transparent {
-  margin-top: 40px;
+  margin-top: 0;
   border-color: #fff;
   padding: 14px 50px;
   font-size: 18px;
-  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -208,7 +205,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin-left: 25px;
   color: #5f687b;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -407,11 +403,6 @@ section {
   margin-bottom: 20px;
 }
 
-.about .block:hover {
-    /*
-  border-bottom: 2px solid #57cbcc; */
-}
-
 .about .block:hover .icon-box {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
@@ -431,7 +422,6 @@ section {
   transform: translateZ(0px);
   transition-duration: 0.3s;
   transition-property: -webkit-transform;
-  transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
 
@@ -507,9 +497,9 @@ p {
   padding-top: 0;
 }
 .counts .counters span {
-  font-size: 48px;
+  font-size: 3rem;
   display: block;
-  color: #16df7e;
+  color: #211f5e;
   font-weight: 700;
 }
 .counts .counters p {
@@ -643,7 +633,7 @@ p {
 }
 
 .title2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -651,8 +641,6 @@ p {
   justify-content: center;
   height: 11vh;
   letter-spacing: 1px;
-    
-  
 }
 
 .heading1{
@@ -696,7 +684,7 @@ p {
 .pricing li:nth-child(2n + 1) {
   /*background-color: #353b43; */
   padding: 8px;
-  margin: 5px 0px -9px;
+  margin: 5px 0 -9px;
     color:white;
 }
 
@@ -708,7 +696,7 @@ p {
 .pricing li:nth-child(2n) {
   /*background-color: #292f36;*/
     color:white;
-  margin: 0px 0px -9px;
+  margin: 0 0 -9px;
   padding: 8px;
 }
 
@@ -762,7 +750,7 @@ p {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(95, 104, 123, 0.08);
+  box-shadow: 0 0 30px rgba(95, 104, 123, 0.08);
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -840,7 +828,6 @@ p {
   margin: 13px 15px 0 15px;
   padding: 20px 20px 20px 20px;
   background: white;
-  position: relative;
   border-radius: 6px;
   position: relative;
   z-index: 1;
@@ -1054,7 +1041,6 @@ p {
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
@@ -1165,7 +1151,7 @@ p {
   margin-bottom: 0;
 }
 #footer .footer-top p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   margin: 30px 0 0 0;
   padding: 0;
@@ -1201,7 +1187,7 @@ p {
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #206bfb;
@@ -1349,7 +1335,6 @@ p {
 ==================================================================*/
 
 #twitter-feed {
-  background-image: url("../images/parallax/twitter.jpg");
   padding-bottom: 100px;
   padding-top: 80px;
 }

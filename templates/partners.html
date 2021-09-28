@@ -1,37 +1,13 @@
 {% load static %}
-<html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="description"
-      content="Meghna One page parallax responsive HTML Template "
-    />
+<html lang="en">
 
-    <meta name="author" content="Muhammad Morshed" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Sponsors | ActionPlan</title>
-
-    <!-- Mobile Specific Meta
-		================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Favicon -->
-
-    <!-- CSS
-		================================================== -->
-    <!-- Fontawesome Icon font -->
-    <link rel="stylesheet" href="{% static 'assetspartners/plugins/themefisher-font/style.css' %}" />
-    <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="{% static 'assetspartners/plugins/bootstrap/dist/css/bootstrap.min.css' %}"/>
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="{% static 'assetspartners/plugins/animate-css/animate.css' %}" />
-    <link rel="stylesheet" href="{% static 'assetspartners/css/fontawesome-all.css' %}" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="{% static 'assetspartners/assets/js/font.js' %}"></script>
+  <title>Butterfly Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
 
@@ -40,632 +16,998 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{% static 'assetspartners/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assetspartners/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assetspartners/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assetspartners/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assetspartners/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-
-
-
+  <link href="{% static 'assetsp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsp/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsp/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsp/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsp/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <!-- Template Main CSS File -->
-  <link href="{% static 'assetspartners/assets/css3/style.css' %}" rel="stylesheet">
-    <link href="{% static 'navbar.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsp/css/style.css' %}" rel="stylesheet">
+
+  <style>
+
+        .separator {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 1.5rem;
+        }
+
+        .separator::before,
+        .separator::after {
+          content: '';
+          flex: 1;
+          border-bottom: 1px solid #000;
+        }
+
+        .separator:not(:empty)::before {
+          margin-right: .25em;
+        }
+
+        .separator:not(:empty)::after {
+          margin-left: .25em;
+        }
+
+        .image-container{
+            width: 100%;
+            height:100%;
+
+        }
+
+        .mainsponser{
+            width: 50%;
+        }
+
+        @media screen and (max-width: 770px)
+        {
+        .mainsponser{
+          width: 95%;
+        } 
+        }
+
+        .center{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+
+  </style>
 
 
-  </head>
+</head>
 
-  <body>
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<body>
 
-      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">About</a></li>
-            <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
-          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
-            <li><a class="nav-link scrollto " href="{% url 'actionplan:structure' %}">Structure</a></li>
-          <li><a class="nav-link scrollto active" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
-           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header>
+  <!-- ======= Header ======= -->
+  
 
 
-  <section id="portfolio" class="portfolio">
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>PARTNERS</h2>
-       
+          <h2>Sponsors</h2>
+        </div>
+        <div class="container" style="align-items: center; justify-content: center;">
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="separator"><h3 style="font-weight:200">&nbsp;Title Sponsor&nbsp;</h3></div>
+                <a href="https://www.schaeffler.co.in/"><img class="center mainsponser" src="{% static 'assetsp/img/sponsors/Title-Sponsor.jpg' %}" alt="sponsor"></a>
+                <p style="text-align: center;">
+                  <a href="https://www.twitter.com/schaefflergroup" style="text-decoration:none; color: #fa5252"><i class="fab fa-twitter"></i></a> &nbsp
+                  <a href="https://www.instagram.com/schaefflergroup/" style="text-decoration:none; color: #fa5252"><i class="fab fa-instagram"></i></a> &nbsp
+                  <a href="https://www.facebook.com/SchaefflerIndia/" style="text-decoration:none; color: #fa5252"><i class="fab fa-facebook-f"></i></a> &nbsp
+                  <a href="https://www.linkedin.com/company/schaeffler" style="text-decoration:none; color: #fa5252"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+            </div> <!-- end of col -->
+          </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="separator"><h3 style="font-weight:200">&nbsp;Associate Sponsor&nbsp;</h3></div>
+                <a href="https://www.oxfamindia.org/"><img class="center mainsponser" src="{% static 'assetsp/img/sponsors/Associate Sponsor.png' %}" alt="sponsor"></a>
+                <p style="text-align: center;">
+                  <a href="https://twitter.com/OxfamIndia" style="text-decoration:none; color: #fa5252"><i class="fab fa-twitter"></i></a> &nbsp
+                  <a href="https://www.instagram.com/oxfam_india/?hl=en" style="text-decoration:none; color: #fa5252"><i class="fab fa-instagram"></i></a> &nbsp
+                  <a href="https://www.facebook.com/oxfamindia/" style="text-decoration:none; color: #fa5252"><i class="fab fa-facebook-f"></i></a> &nbsp
+                  <a href="https://www.youtube.com/channel/UCv8JJT5rA0mt7f76FZaxIuw" style="text-decoration:none; color: #fa5252"><i class="fab fa-youtube"></i></a> &nbsp
+                  <a href="https://www.linkedin.com/company/oxfam-india/" style="text-decoration:none; color: #fa5252"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+            </div> <!-- end of col -->
+          </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="separator"><h3 style="font-weight:200">&nbsp;Powered By&nbsp;</h3></div>
+                <a href="https://iocl.com/"><img class="center mainsponser" src="{% static 'assetsp/img/sponsors/Powered By.png' %}" alt="sponsor"></a>
+                <p style="text-align: center;">
+                  <a href="https://www.twitter.com/indianOilcl" style="text-decoration:none; color: #fa5252"><i class="fab fa-twitter"></i></a> &nbsp
+                  <a href="https://www.instagram.com/indianoilcorp" style="text-decoration:none; color: #fa5252"><i class="fab fa-instagram"></i></a> &nbsp
+                  <a href="https://www.facebook.com/IndianOilCorpLimitedps://www.facebook.com/SchaefflerIndia/" style="text-decoration:none; color: #fa5252"><i class="fab fa-facebook-f"></i></a> &nbsp
+                  <a href="https://www.linkedin.com/company/indian-oil-corp-limited" style="text-decoration:none; color: #fa5252"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+            </div> <!-- end of col -->
+          </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+  <!-- end of Sponsors -->
+
+
+      </div>
+
+
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Partners</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-a">Incubation Partners</li>
-              <li data-filter=".filter-b">Investor Partners</li>
-              <li data-filter=".filter-c">Knowledge Partners</li>
+              <li data-filter=".filter-a">INCUBATION PARTNERS</li>
+              <li data-filter=".filter-b">INVESTOR PARTNERS</li>
+              <li data-filter=".filter-c">Media Partners</li>
               <li data-filter=".filter-d">Merchandise Partners</li>
-              <li data-filter=".filter-e">Media Partners</li>
-              <li data-filter=".filter-f">Outreach Partners</li>
-                <li data-filter=".filter-g">Ecosystem Partners</li>
-                <li data-filter=".filter-h">Institution Partners</li>
-                <li data-filter=".filter-i"> Program Partners</li>
-                <li data-filter=".filter-j"> Accelerator Partners</li>
+              <li data-filter=".filter-e">OUTREACH PARTNERS</li>
+              <li data-filter=".filter-f">Media Partners</li>
+              <li data-filter=".filter-g">OTHER PARTNERS</li>
+
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
-            
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-a">
             <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/Timed.jpg' %}" class="img-fluid" alt="">
-                </a>
+              <img src="{% static 'assetsp/img/partners/Incubation partner/3i.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/3i.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-c">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Knowledge-Partners/iB hubs.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Investor-Partners/avaana.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/startup chaupal.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/venture catlyst.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/verist law.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Investor-Partners/fair angels.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-g">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/ecosystem/vruksh-ecosystem.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-h">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/institution/bits pilani.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-i">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/program/Casiglobal.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/Startup Xperts.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/ciie.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/excubator.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/No stops.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/riidl.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Investor-Partners/ventures-shirish.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/SCEI.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/SINE.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/supreme.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-j">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/accelerators/sTARTUPBAY.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-a">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Incubators/startuped.jpg' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-c">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-c">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-c">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-d">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-e">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-f">
-            <div class="portfolio-wrap">
-                <a href="https://www.dei.ac.in/dei/">
-              <img src="{% static 'assetspartners/Ads/Outreach-Partners/Untitled-4.png' %}" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-info">
-                <div>
+                <h4><a href=https://3izone.com/">https://3izone.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  
                 </div>
               </div>
             </div>
           </div>
             
+            <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/arthayan.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+              
+                </div>
+              </div>
+            </div>
           </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/atal-incubation-centre.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+              
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/ciie.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/excubator.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/logo.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/makeithappen.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://www.mciii.in/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/Nexus.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/No stops.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERSr</p>
+                <div class="portfolio-links">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/riidl.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/SCEI.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+               
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/SINE.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/startup chaupal.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/Startup Xperts.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/supreme.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/Timed.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+            
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/venture catlyst.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/verist law.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-a">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Incubation partner/Yenepoya Tech.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INCUBATION PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+            
+             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Investment partner/avaana.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INVESTOR PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Investment partner/fair angels.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INVESTOR PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Investment partner/loox.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INVESTOR PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Investment partner/stufflane-logo.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INVESTOR PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-b">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Investment partner/ventures-shirish.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>INVESTOR PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/aglasem.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Amar-Ujala.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                    <a href="https://twitter.com/Abhyuday_IITB" ><i style="font-size: 1rem;" class="fab fa-twitter"></i></a>&nbsp;
+                  <a href="https://www.facebook.com/SchaefflerIndia/"><i style="font-size: 1rem;" class="fab fa-facebook-f"></i></a>&nbsp;
+                  <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/"><i style="font-size: 1rem;" class="fab fa-linkedin-in"></i></a>&nbsp;
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/blogadda.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/CIO Review.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Higher Education Review.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/MyPowai-Magazine.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Scientific India.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Silicon India.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Startup News.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Startup Success Stories.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Summachar.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/The-Global-Hues.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/The-Statesman.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Truth-India.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Media Partners/Youth Incorporated.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Media Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+            
+            
+              <div class="col-lg-4 col-md-6 portfolio-item filter-d">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Merchandise Partners/Cottvalley.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Merchandise Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-d">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Merchandise Partners/stufflane-logo.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>Merchandise Partners</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Bizzbucket.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/BMS.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Bschool.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Collegeduniya.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Dare2Compete.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Desi Entrepreneur.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/GetMyUni.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/India Eve.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Indianweb2.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Innopreneurs.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Knowafest.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Lemon Ideas.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Management Pedia.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Noticebard.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Prepp.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/SME World.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Startup Reporter.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/T-Hub.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/The Indian Education Diary.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Y-East Kolkata.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-e">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Outreach Partners/Zoutouns.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OUTREACH PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/bits.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>OTHER PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/casi-global-new-york.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="http://www.casigroupinc.com/">http://www.casigroupinc.com/</a></h4>
+                <p>PROGRAM PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/epic.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://www.linkedin.com/company/epic-sit/?originalSubdomain=in">https://www.linkedin.com/company/epic-sit/?originalSubdomain=in</a></h4>
+                <p>KNOWLEDGE PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/ib-hubs.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://ibhubs.co/">https://ibhubs.co/</a></h4>
+                <p>KNOWLEDGE PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/sparkinov.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://www.avasdigitech.com/innovation/">https://www.avasdigitech.com/innovation/</a></h4>
+                <p>INNOVATION PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/startupbay.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="http://www.startupbay.in/">http://www.startupbay.in/</a></h4>
+                <p>ACCELERATOR PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/startuped.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://www.startuped.net/">https://www.startuped.net/</a></h4>
+                <p>INCUBATION PLATFORM PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-g">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/other partners/vruksh-ecosystem.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://vruksh.org/">https://vruksh.org/</a></h4>
+                <p>ECOSYSTEM PARTNER</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-lg-4 col-md-6 portfolio-item filter-f">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assetsp/img/partners/Social Media Partners/.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="https://zoutons.com/">https://zoutons.com/</a></h4>
+                <p>MEDIA PARTNERS</p>
+                <div class="portfolio-links">
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+           
+
+        </div>
+
       </div>
-    </section>
-    <!-- End Portfolio Section -->
- 
-  <script src="{% static 'assetspartners/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assetspartners/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assetspartners/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'assetspartners/assets/vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'assetspartners/assets/vendor/purecounter/purecounter.js' %}"></script>
-  <script src="{% static 'assetspartners/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assetsp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assetsp/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assetsp/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assetsp/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assetsp/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assetsp/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static 'assetspartners/assets/js/main.js' %}"></script>
+  <script src="{% static 'assetsp/js/main.js' %}"></script>
 
-    <!-- Custom js -->
-    <script type="text/javascript" src="{% static 'assetspartners/assets/js/partners.js' %}"></script>
-  </body>
+</body>
+
 </html>

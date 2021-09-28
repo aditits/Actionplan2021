@@ -38,13 +38,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">About</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'actionplan:home' %}">Home</a>
+          </li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">About</a></i>
             <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
           <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
             <li><a class="nav-link scrollto " href="{% url 'actionplan:structure' %}">Structure</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">Rules and FAQ</a></li>
            <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -662,78 +663,50 @@ fsEnter.addEventListener('click', function (e) {
   <!-- ======= Hero Section ======= -->
   <section  class="hero-area d-flex align-items-center">
         <div class="block">
-        <div>
+        <div style="margin-top: -100px;">
           <img
             src="{% static 'assets/img/Action-Plan-Logo.png' %}"
             alt=""
             height="180px"
             width="180px"
           />
+            <style>
+                .reg-button:hover{
+                   background: #211f5e;
+                }
+            </style>
           <h1>ACTION PLAN</h1>
         </div>
         <div>
-          <h2 style="font-size: 22px">Social Entrepreneurship Competition</h2>
-          <h2 style="font-size: 22px">IDEATE | INNOVATE | IMPLEMENT</h2>
-          <div class="btn1">
-            <a data-scroll href="{% url 'actionplan:team-register' %}" class="btn btn-transparent"
-              >REGISTER</a
-            >
-            <a data-scroll href="{% url 'actionplan:team-login' %}" class="btn btn-transparent"
-              >SIGN IN</a
-            >
+          <h2 style="font-size: 1.5rem;font-weight: 600;color: #fff; margin-bottom: 0.25rem;">Social Entrepreneurship Competition</h2>
+          <h2 style="font-size: 1.5rem;font-weight: 600;color: #fff;">IDEATE | INNOVATE | IMPLEMENT</h2>
+          <div class="btn1" style="font-size: 3rem">
+            <a data-scroll href="{% url 'actionplan:team-register' %}" class="btn btn-transparent reg-button"
+              >REGISTER</a>
+            <a data-scroll href="{% url 'actionplan:team-login' %}" class="btn btn-transparent reg-button"
+              >SIGN IN</a>
           </div>
         </div>
       </div>
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= Featured Services Section ======= --
-    <section id="featured-services" class="featured-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-clipboard-data"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Featured Services Section -->
-
      <section id="about" class="services section-bg">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" style="padding-bottom: 2.95rem;">
           <span>What is ACTION PLAN?</span>
         </div>
 
-        <div class="row" style="padding: 0 20px 0 20px; background: rgba( 141, 141, 141, 0.15 );
+        <div class="row" style="padding: 23px 24px 13px 24px;;
+background: rgba( 58, 58, 58, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8px );
--webkit-backdrop-filter: blur( 8px );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );">
+border: 1px solid rgba( 255, 255, 255, 0.18 );>
          <div class="section-title">
-          <p class="ap">
+          <p class="ap" style="color: #fff;">
               We believe that young minds hold the key to solve numerous challenges
               that have plagued our society for so long. It’s the need of time to
               channelize this energy in the right direction which can definitely

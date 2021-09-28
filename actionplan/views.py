@@ -121,3 +121,6 @@ def HomeAboutView(request):
 
 def HomeContactView(request):
     return redirect(reverse('actionplan:home') + '#contact-us')
+
+def FAQView(request):
+    return render(request, 'rulesfaq.html')
