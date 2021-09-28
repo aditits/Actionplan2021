@@ -1,0 +1,292 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Techie Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assetsr/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsr/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsr/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsr/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsr/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetsr/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assetsr/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'navbar.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">About</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
+            <li><a class="nav-link scrollto active" href="{% url 'actionplan:structure' %}">Structure</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
+           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="{% static 'assetsr/img/about.jpg' %}" class="img-fluid" alt="">
+              
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Rules And Eligibility</h3>
+            
+            <ul>
+              <li><i class="bi bi-check-circle"></i> There is no age restriction on any individual to participate. Anyone, from students to working professionals across the nation, can participate.
+</li>
+              <li><i class="bi bi-check-circle"></i> Any startup incorporated before 4 years of the conclusion i.e. before January 2018 will not be allowed to participate.</li>
+              <li><i class="bi bi-check-circle"></i> Action Plan aims to promote startups that require assistance in funding, mentoring, etc. Therefore startups who have raised external funding i.e. funding from angel investors, venture capitalists, etc. cannot participate.</li>
+              <li><i class="bi bi-check-circle"></i> A team can register with minimum two and maximum eight members
+                including the Team leader.</li>
+              <li><i class="bi bi-check-circle"></i> Team leader will be point of contact and his/her email address will be used for future correspondence.</li>
+              <li><i class="bi bi-check-circle"></i> Team must abide by timely instructions, guidelines and ethics
+                provided by Abhyuday with general business ethics.</li>
+              <li><i class="bi bi-check-circle"></i> Additionally the plan should solve a critical social problem in
+                an innovative as well as transformational manner. It should have
+                some quantifiable social return.</li>
+
+            </ul>
+             
+          </div>
+        </div>
+
+      </div>
+         <div class="col-md-12" style="text-align:center;"> 
+            <p class="fst-italic">
+              Note: Teams may be asked to provide proof of the above at any time
+          during the competition cycle and in the eventuality of wrong
+          details/information your entry shall be disqualified. By registering
+          for Action plan, Abhyuday expressly disclaims any obligation or
+          undertaking to update or revise any forward-looking statements,
+          targets, estimates or any related information contained in this
+          concept note to reflect any change in events, conditions, assumptions
+          or circumstances on which any such statements are based unless so
+          required by applicable law. Furthermore, by participating in Action
+          Plan, each participating team and all of its team members agree to
+          allow Abhyuday, IIT Bombay to use their names, images and information
+          regarding the team's action plan, any other material forwarded as part
+          of their submission, and prize information in publicity and marketing
+          for the same.
+            </p>
+                  </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> WHO CAN PARTICIPATE IN ACTION PLAN COMPETITION?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Anyone, from students to working professionals across the
+                    nation, can participate. For more information refer Rules
+                    and Guidelines in Competition Manual.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">I WANT TO PARTICIPATE IN ACTION PLAN. WHAT SHOULD I DO? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                Step 1- Register for A-Plan.</p>
+                  <p>
+                    Step 2- You will have to provide Team leader's details, Team
+                    Members' details, postal and other details as required. You
+                    will receive a confirmation mail.
+                  </p>
+                  <p>
+                    Step 3- After getting confirmation mail, you can proceed for
+                    submission.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed"> WHAT IS REGISTRATION/PARTICIPATION FEE FOR ACTION PLAN? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  There is NO registration/participation fee.
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">WHAT IS THE LAST DATE FOR REGISTRATION? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The last date for registration is 20th November 2020.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">CAN I SUBMIT ADDITIONAL DOCUMENTS TOO?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, you can submit extra document along with your playbook.
+                </p>
+              </div>
+            </li>
+              
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">HOW CAN I CONFIRM THAT I HAVE SUBMITTED THE PLAYBOOK?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                    After submitting your entry, you will see a page confirming
+                    the receipt of your playbook along with a confirmation mail.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">CAN I CHANGE MY TEAM LATER?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                    Yes, you can change your team info and other registration
+                    details by mailing one of our managers. You can even add a
+                    team member or drop someone. However you cannot change the
+                    details of the Team Leader later.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">WHAT SHOULD BE THE SIZE OF MY TEAM?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                <p>
+            Your team can consist of 2-8 members.
+                </p>
+              </div>
+            </li>
+              
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed"> CAN A TEAM CONSISTS PEOPLE FROM DIFFERENT COLLEGES?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                Yes, teams can consist of individuals from different
+                    colleges.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">DO I COMPULSORY NEED TO HAVE A TEAM?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                    Yes, it's compulsory to have team. It's very difficult for
+                    individuals to compete.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-11" class="collapsed"> DOES MY ACTION PLAN HAVE TO BE TECHNOLOGY RELATED?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-11" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                    No, we encourage all entries that can be developed into an
+                    Action plan. It must fit into model of Activism, Not for
+                    profit (NGO) or Social entrepreneurship.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-12" class="collapsed">HOW DOES THE MENTORING PROGRAM WORK?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-12" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                Mentors are experienced sector-specific experts who provide
+                    assistance and guidance to the participants. They will offer
+                    suggestions and feedbacks to help participants develop and
+                    refine their model. Participants are not required to have a
+                    mentor, although teams are strongly encouraged to take
+                    advantage of this opportunity. NOTE:- Mentors are there to
+                    guide you not to give you solutions of your problems.
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-13" class="collapsed">ONE OF MY QUERIES LEFT UNANSWERED, WHOM DO I CONTACT?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-13" class="collapse" data-bs-parent=".faq-list">
+                <p>
+              You can drop a mail at competitions@abhyudayiitb.org
+                </p>
+              </div>
+            </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-14" class="collapsed">WHAT IS THE ELIGIBILTY CRITERIA TO PARTICIPATE?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-14" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                    Yes, you can change your team info and other registration
+                    details by mailing one of our managers. You can even add a
+                    team member or drop someone. However you cannot change the
+                    details of the Team Leader later.
+                </p>
+              </div>
+            </li>
+              
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assetsr/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assetsr/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assetsr/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assetsr/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assetsr/vendor/php-email-form/validate.js %}"></script>
+  <script src="{% static 'assetsr/vendor/purecounter/purecounter.js %}"></script>
+  <script src="{% static 'assetsr/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assetsr/js/main.js' %}"></script>
+
+</body>
+
+</html>
