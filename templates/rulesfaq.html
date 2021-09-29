@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Techie Bootstrap Template - Index</title>
+  <title>Rules and FAQs | ActionPlan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,8 +25,14 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assetsr/css/style.css' %}" rel="stylesheet">
-        <link href="{% static 'navbar.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link href="{% static 'navbar.css' %}" rel="stylesheet">
 
+         <style>
+            .contactparalinks:hover{
+        color: #30D5C8;
+    }
+        </style>
 
 </head>
 
@@ -41,15 +47,15 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">Rules & FAQ</a></li>
-            <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
-          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
-            <li><a class="nav-link scrollto active" href="{% url 'actionplan:structure' %}">Structure</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
-           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">Contact</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">HOME</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">ABOUT</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'actionplan:faq' %}">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">MENTORSHIP</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">SECTORS</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">INCENTIVES</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:structure' %}">STRUCTURE</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">SPONSORS</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -60,29 +66,29 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="background: #f9f9f9;">
       <div class="container">
-
+         <div class="section-title" style="color: #444">
+          <h2>Rules And Eligibility</h2>
+        </div>
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
             <img src="{% static 'assetsr/img/about.jpg' %}" class="img-fluid" alt="">
               
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Rules And Eligibility</h3>
-            
             <ul>
               <li><i class="bi bi-check-circle"></i> There is no age restriction on any individual to participate. Anyone, from students to working professionals across the nation, can participate.
 </li>
-              <li><i class="bi bi-check-circle"></i> Any startup incorporated before 4 years of the conclusion i.e. before January 2018 will not be allowed to participate.</li>
+              <li><i class="bi bi-check-circle"></i> Any startup incorporated before 4 years of the conclusion i.e. before January 2017 will not be allowed to participate.</li>
               <li><i class="bi bi-check-circle"></i> Action Plan aims to promote startups that require assistance in funding, mentoring, etc. Therefore startups who have raised external funding i.e. funding from angel investors, venture capitalists, etc. cannot participate.</li>
-              <li><i class="bi bi-check-circle"></i> A team can register with minimum two and maximum eight members
-                including the Team leader.</li>
+              <li><i class="bi bi-check-circle"></i> Teams can have minimum 2 and maximum 8 members
+                including Team leader.</li>
               <li><i class="bi bi-check-circle"></i> Team leader will be point of contact and his/her email address will be used for future correspondence.</li>
               <li><i class="bi bi-check-circle"></i> Team must abide by timely instructions, guidelines and ethics
                 provided by Abhyuday with general business ethics.</li>
-              <li><i class="bi bi-check-circle"></i> Additionally the plan should solve a critical social problem in
-                an innovative as well as transformational manner. It should have
+              <li><i class="bi bi-check-circle"></i> The plan should solve a critical social problem in
+                an innovative as well as transformational manner and should have
                 some quantifiable social return.</li>
 
             </ul>
@@ -91,8 +97,9 @@
         </div>
 
       </div>
-         <div class="col-md-12" style="text-align:center;"> 
-            <p class="fst-italic">
+         <div class="col-md-12" style="text-align:center; color: #1d1d1d">
+            <p class="fst-italic" style="padding-left: 30px;
+    padding-right: 30px;">
               Note: Teams may be asked to provide proof of the above at any time
           during the competition cycle and in the eventuality of wrong
           details/information your entry shall be disqualified. By registering
@@ -112,7 +119,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq">
+    <section id="faq" class="faq" style="padding-bottom: 2px;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -121,7 +128,7 @@
         </div>
 
         <div class="faq-list">
-          <ul>
+          <ul style="color: #1d1d1d">
             <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> WHO CAN PARTICIPATE IN ACTION PLAN COMPETITION?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
@@ -251,16 +258,16 @@
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-13" class="collapsed">ONE OF MY QUERIES LEFT UNANSWERED, WHOM DO I CONTACT?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-13" class="collapse" data-bs-parent=".faq-list">
                 <p>
-              You can drop a mail at competitions@abhyudayiitb.org
+              You can drop a mail at actionplan@abhyudayiitb.org
                 </p>
               </div>
             </li>
                 <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-14" class="collapsed">WHAT IS THE ELIGIBILTY CRITERIA TO PARTICIPATE?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-14" class="collapsed">CAN I CHANGE MY TEaM LATER ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-14" class="collapse" data-bs-parent=".faq-list">
                 <p>
                     Yes, you can change your team info and other registration
-                    details by mailing one of our managers. You can even add a
+                    details by sending a mail to actionplan@abhyudayiitb.org. You can even add a
                     team member or drop someone. However you cannot change the
                     details of the Team Leader later.
                 </p>
@@ -268,10 +275,25 @@
             </li>
               
           </ul>
+
         </div>
+
+
+      </div>
+
+                  <hr style="margin: 0 auto; margin-top: 20px; width: 80%; color: #fff;">
+      <div class="col-md-12" style="text-align: center; color: #fff; position: relative; padding: 20px 0 10px">
+                <p> Follow Us &nbsp - &nbsp
+                      <a class="contactparalinks" href="https://twitter.com/Abhyuday_IITB" style="text-decoration:none;color: #fff;"><i class="fab fa-twitter"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.instagram.com/iitbombay_abhyuday/" style="text-decoration:none;color: #fff;"><i class="fab fa-instagram"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.facebook.com/abhyuday.iitb/" style="text-decoration:none;color: #fff;"><i class="fab fa-facebook-f"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.youtube.com/c/AbhyudayIITBombay" style="text-decoration:none;color: #fff;"><i class="fab fa-youtube"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.linkedin.com/company/abhyuday-iit-bombay/" style="text-decoration:none;color: #fff;"><i class="fab fa-linkedin-in"></i></a>
+                </p>
 
       </div>
     </section><!-- End Frequently Asked Questions Section -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="border-radius: 100%; background: #fff"><i style="color: #1d1d1d;" class="bi bi-arrow-up-short"></i></a>
 
     
   </main><!-- End #main -->

@@ -38,15 +38,15 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'actionplan:home' %}">Home</a>
-          </li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">About</a></i>
-            <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">Mentorship</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">Sectors</a></li>
-          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">Incentives</a></li>
-            <li><a class="nav-link scrollto " href="{% url 'actionplan:structure' %}">Structure</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">Sponsors</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">Rules and FAQ</a></li>
-           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#">HOME</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">MENTORSHIPS</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">SECTORS</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">INCENTIVES</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:structure' %}">STRUCTURE</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:partners' %}">SPONSORS</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -70,7 +70,7 @@
         .scrollElement
             {
               position: absolute;
-              height: 3500px;
+              height: 2500px;
               width: 100px;
               top: 0;
               z-index: 0;
@@ -675,7 +675,11 @@ fsEnter.addEventListener('click', function (e) {
                    background: #211f5e;
                 }
             </style>
-          <h1>ACTION PLAN</h1>
+          <div class="section-title" style="width: 100vw; margin: 0 auto;">
+              <span style="top: 48px; font-size: 5rem;">ACTION PLAN</span>
+              <h2 style="font-size: 4.5rem;">ACTION PLAN</h2>
+
+          </div>
         </div>
         <div>
           <h2 style="font-size: 1.5rem;font-weight: 600;color: #fff; margin-bottom: 0.25rem;">Social Entrepreneurship Competition</h2>
@@ -694,11 +698,13 @@ fsEnter.addEventListener('click', function (e) {
      <section id="about" class="services section-bg">
       <div class="container">
 
-        <div class="section-title" style="padding-bottom: 2.95rem;">
+        <div class="section-title">
           <span>What is ACTION PLAN?</span>
+          <h2 style="color: #211f5e">What is ACTION PLAN</h2>
+
         </div>
 
-        <div class="row" style="padding: 23px 24px 13px 24px;;
+        <div class="row" style="padding: 23px 24px 13px 24px;
 background: rgba( 58, 58, 58, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 10px );
@@ -732,17 +738,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
 
           <div class="col-lg-4 col-6 text-center section-title">
             <span data-purecounter-start="0" data-purecounter-end="700" data-purecounter-duration="2" class="purecounter"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</span>
-            <p style="padding-top:45px;font-size:20px;">Teams Participated</p>
+            <p style="padding-top:45px;font-size:1.25rem;">Teams Participated</p>
           </div>
 
           <div class="col-lg-4 col-6 text-center section-title">
             <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="2" class="purecounter"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</span>
-            <p style="padding-top:45px;font-size:20px;">Teams Received professional mentorship</p>
+            <p style="padding-top:45px;font-size:1.25rem;">Teams Received Professional Mentorship</p>
           </div>
 
           <div class="col-lg-4 col-6 text-center section-title">
             <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2" class="purecounter"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</span>
-            <p style="padding-top:45px;font-size:20px;">Partners </p>
+            <p style="padding-top:45px;font-size:1.25rem;">Partners </p>
           </div>
 
 
@@ -751,93 +757,28 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <span>RULES AND ELIGIBILITY</span>
-        </div>
-        <div class="row section-title">
-          <div class="col-md-12">
-            <ul class="rules" style="list-style-type: disc; text-align: start;">
-              <li>
-                There is no age restriction on any individual to participate.
-                Anyone, from students to working professionals across the
-                nation, can participate.
-              </li>
-              <li>
-                Any startup incorporated before 3 years of the conclusion i.e.
-                before January 2018 will not be allowed to participate. You will
-                be required to submit proof of the same during the competition
-                process.
-              </li>
-              <li>
-                Action Plan aims to promote startups that require assistance in
-                funding, mentoring, etc. Therefore startups who have raised
-                external funding i.e. funding from angel investors, venture
-                capitalists, etc. cannot participate
-              </li>
-              <li>
-                A team can register with minimum two and maximum eight members
-                including the team leader.
-              </li>
-              <li>
-                Team leader will be point of contact for any correspondence for
-                team. Team should use their team leader email address for future
-                correspondence.
-              </li>
-              <li>
-                Team must abide by timely instructions, guidelines and ethics
-                provided by Abhyuday with general business ethics.
-              </li>
-              <li>
-                Additionally the plan should solve a critical social problem in
-                an innovative as well as transformational manner. It should have
-                some quantifiable social return. Further entries eligible for
-                incubation opportunities should abide by the eligibility of that
-                particular company.
-              </li>
-                <div class="section-title" style="text-align: start;">
-          Note: Teams may be asked to provide proof of the above at any time
-          during the competition cycle and in the eventuality of wrong
-          details/information your entry shall be disqualified. By registering
-          for Action plan, Abhyuday expressly disclaims any obligation or
-          undertaking to update or revise any forward-looking statements,
-          targets, estimates or any related information contained in this
-          concept note to reflect any change in events, conditions, assumptions
-          or circumstances on which any such statements are based unless so
-          required by applicable law. Furthermore, by participating in Action
-          Plan, each participating team and all of its team members agree to
-          allow Abhyuday, IIT Bombay to use their names, images and information
-          regarding the team's action plan, any other material forwarded as part
-          of their submission, and prize information in publicity and marketing
-          for the same.
-        </div>
-            </ul>
-              
-          </div>
-        </div>
-           
-        
-
-      </div>
-    </section><!-- End Services Section -->
-
     <!-- ======= Portfolio Section ======= -->
-    <section id="counter" class="parallax-section bg-1 section overly">
-        <div class="container">
-            <div class="row">
-               <div class="section-title">
-                   <h2 class='heading1' >WINNERS OF 2020</h2>
+      <div class="section-title">
+                   <span> WINNERS OF 2020 </span>
+                      <h2 style="color: #211f5e"> Winners Of 2020 </h2>
+
                </div>
+    <section id="counter" class="parallax-section bg-1 section overly">
+        <div class="container" style="padding: 11px 13px 2px 13px;x;
+        background: rgba( 58, 58, 58, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );">
+            <div class="row">
+
 
                 <!-- first count item -->
                 <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
                     <div class="counters-item section-title">
-                        <h3>1ST RUNNER UP</h3>
-                        <h4>NIRVAAN</h4>
-                        <h6>AIRTH</h6>
+                        <h3 style="color: #fff">1ST RUNNER UP</h3>
+                        <h4 style="color: #fff">NIRVAAN</h4>
                     </div>
                 </div>
                 <!-- end first count item -->
@@ -845,9 +786,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                 <!-- second count item -->
                 <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
                     <div class="counters-item section-title">
-                        <h3>WINNER' 2020</h3>
-                        <h4>PACIFY</h4>
-                        <h6>WATOR</h6>
+                        <h3 style="color: #fff">WINNER 2020</h3>
+                        <h4 style="color: #fff">PACIFY</h4>
                     </div>
                 </div>
                 <!-- end second count item -->
@@ -855,177 +795,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                 <!-- third count item -->
                 <div class="col-md-4 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
                     <div class="counters-item section-title">
-                        <h3>2ND RUNNER UP</h3>
-                        <h4>ASBAH</h4>
-                        <h6>BLIS CARE</h6>
+                        <h3 style="color: #fff">2ND RUNNER UP</h3>
+                        <h4 style="color: #fff">ASBAH</h4>
                     </div>
                 </div>
             </div> 		<!-- end row -->
         </div>   	<!-- end container -->
     </section>
-
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title " >
-          <span>Frequently Asked Quetions</span>
-        </div>
-        <div class="row section-title">
-
-        <div
-            class="col-md-6 text-center wow fadeInUp"
-            data-wow-duration="200ms"
-          >
-            <div class="price-item " style="text-align: start; ">
-              <!-- plan name & value -->
-              <!-- /plan name & value -->
-
-              <!-- plan description -->
-              <ul>
-                <p class="faq1" style="margin-bottom: 12px;">
-                  WHO CAN PARTICIPATE IN ACTION PLAN COMPETITION?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Anyone, from students to working professionals across the
-                    nation, can participate. For more information refer Rules
-                    and Guidelines in Competition Manual.
-                  </p>
-                </div>
-                <p class="faq1" style="margin-bottom: 12px;" >
-                  I WANT TO PARTICIPATE IN ACTION PLAN. WHAT SHOULD I DO?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">Step 1- Register for A-Plan.</p>
-                  <p class="parafaq">
-                    Step 2- You will have to provide Team leader's details, Team
-                    Members' details, postal and other details as required. You
-                    will receive a confirmation mail.
-                  </p>
-                  <p class="parafaq">
-                    Step 3- After getting confirmation mail, you can proceed for
-                    submission.
-                  </p>
-                </div>
-                
-                <p class="faq1" style="margin-bottom: 12px;">
-                  WHAT IS REGISTRATION/PARTICIPATION FEE FOR ACTION PLAN?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    There is no registration/participation fee.
-                  </p>
-                </div>
-                
-                <p class="faq1" style="margin-bottom: 12px;">WHAT IS THE LAST DATE FOR REGISTRATION?</p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    The last date for registration is 26th October 2021.
-                  </p>
-                </div>
-              
-                <p class="faq1" style="margin-bottom: 12px;">CAN I SUBMIT ADDITIONAL DOCUMENTS TOO?</p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Yes, you can submit extra document along with your playbook.
-                  </p>
-                </div>
-             
-                <p class="faq1" style="margin-bottom: 12px;">CAN I CHANGE MY TEAM LATER?</p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Yes, you can change your team info and other registration
-                    details by mailing one of our managers. You can even add a
-                    team member or drop someone. However you cannot change the
-                    details of the Team Leader later.
-                  </p>
-                </div>
-              </ul>
-              <!-- /plan description -->
-
-            </div>
-          </div>
-          <!-- end single pricing table -->
-
-          <!-- single pricing table -->
-          <div class="col-md-6 text-center wow fadeInUp" data-wow-duration="200ms">
-            <div class="price-item" style="text-align: start;">
-
-              <!-- plan description -->
-              <ul>
-                <p class="faq1" style="margin-bottom: 12px;">WHAT SHOULD BE THE SIZE OF MY TEAM?</p>
-                <div class="panel1">
-                  <p class="parafaq">Your team can consist of 2-8 members.</p>
-                </div>
-                
-                <p class="faq1" style="margin-bottom: 12px;">
-                  CAN A TEAM CONSISTS PEOPLE FROM DIFFERENT COLLEGES?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Yes, teams can consist of individuals from different
-                    colleges.
-                  </p>
-                </div>
-                
-                <p class="faq1" style="margin-bottom: 12px;">DO I COMPULSORY NEED TO HAVE A TEAM?</p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Yes, it's compulsory to have team. It's very difficult for
-                    individuals to compete.
-                  </p>
-                </div>
-                
-                <p class="faq1" style="margin-bottom: 12px;">
-                  DOES MY ACTION PLAN HAVE TO BE TECHNOLOGY RELATED?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    No, we encourage all entries that can be developed into an
-                    Action plan. It must fit into model of Activism, Not for
-                    profit (NGO) or Social entrepreneurship.
-                  </p>
-                </div>
-               
-                <p class="faq1" style="margin-bottom: 12px;">HOW DOES THE MENTORING PROGRAM WORK?</p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Mentors are experienced sector-specific experts who provide
-                    assistance and guidance to the participants. They will offer
-                    suggestions and feedbacks to help participants develop and
-                    refine their model. Participants are not required to have a
-                    mentor, although teams are strongly encouraged to take
-                    advantage of this opportunity. NOTE:- Mentors are there to
-                    guide you not to give you solutions of your problems.
-                  </p>
-                </div>
-               
-                <p class="faq1" style="margin-bottom: 12px;">
-                  WHAT IS THE ELIGIBILTY CRITERIA TO PARTICIPATE?
-                </p>
-                <div class="panel1">
-                  <p class="parafaq">
-                    Yes, you can change your team info and other registration
-                    details by mailing one of our managers. You can even add a
-                    team member or drop someone. However you cannot change the
-                    details of the Team Leader later.
-                  </p>
-                </div>
-              </ul>
-              <!-- /plan description -->
-
-              <!-- signup button -->
-
-              <!-- /signup button -->
-            </div>
-          </div>
-          <!-- end single pricing table -->
-
-          <!-- single pricing table -->
-          <!-- end single pricing table -->
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
 
       <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -1033,6 +809,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
 
         <div class="section-title">
           <span>Testimonials</span>
+            <h2 style="color: #211f5e">Testimonials</h2>
+            <p>- This is why we do what we do. Hear our success story from the previous competitiors of ActionPlan -
+          </p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -1051,7 +830,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                     current challenging time
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Pacify</h3>
+                <h3>- Pacify</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -1065,7 +844,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                     Our experience was enriching, owing to the very experienced judges who helped us with the insights.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Asbah</h3>
+                <h3>- Asbah</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -1073,7 +852,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        “Action plan provided a wonderful opportunity filled with new learnings and great
+                        Action plan provided a wonderful opportunity filled with new learnings and great
                         connections and keeping it open age event has given a diverse background a reality check
                         for the work on their startups. At each level it gave me a new challenge which has helped
                         my startup to a great extent. It is a platform which recognizes social work or
@@ -1081,10 +860,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                         structured and loaded with learnings. The event was judged on strictly defined parameters
                         which actually helped us and all judges gave valuable feedback. We received valuable
                         connections which also helped us post events. Overall, a great effort by team Abhyuday,
-                        IIT Bombay.”
+                        IIT Bombay.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Team Bliscare</h3>
+                <h3>- Team Bliscare</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -1101,7 +880,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                     this competition qualitative.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Dr.A K S Suryavanshi - Dean(Student Welfare)</h3>
+                <h3>- Dr. A K S Suryavanshi, Dean (Student Welfare)</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -1116,7 +895,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
                     for every participant in the Action Plan. Kudos to the Abhyuday team!!!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Team AIRTH</h3>
+                <h3>- Team Airth</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -1127,7 +906,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
       </div>
     </section><!-- End Testimonials Section -->
 
-
+<style>
+    .contactparalinks{
+        color: #fff;
+    }
+    .contactparalinks:hover{
+        color: #30D5C8;
+    }
+</style>
  <section id="contact-us" class="contact-us section-bg">
       <div class="container">
         <div class="row">
@@ -1135,15 +921,19 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
           <div class="row">
           <!-- section title -->
           <div class="col-md-12">
-            <div class="section-title text-center">
+            <div class="section-title text-center" style="padding-bottom: 2.5rem">
               <span>Contact US</span>
-            
+              <h2 style="color: #211f5e">Contact Us</h2>
+              <p>Feel free to reach out to us via call or text <br>
+                <i class="fas fa-map-marker-alt "></i>&nbsp;Student Activity Centre, IIT Bombay, Powai, Mumbai, PIN - 400076
+                &nbsp;&nbsp;<i class="fas fa-phone"></i>&nbsp;<a class="contactparalinks" href="tel:+91 8824889351">+91 8824889351</a>
+                &nbsp;<i class="fas fa-envelope"></i>&nbsp;<a class="contactparalinks" href="mailto:actionplan@abhyudayiitb.org">actionplan@abhyudayiitb.org</a>
+          </p>
             </div>
           </div>
           <br />
           <!-- /section title -->
 
-          <!-- Contact Form -->
           <div
             class="col-md-4 contact-main text-center section-title"
             data-aos="fade-up"
@@ -1154,7 +944,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
               </h5>
             <h5 style="font-weight: 300;">
               Competitions Manager<br />
-              <a style="font-weight: 300;" href="mailto:anusar.abhyuday@gmail.com"
+              <a class="contactparalinks" style="font-weight: 300;" href="mailto:anusar.abhyuday@gmail.com"
                 >anusar.abhyuday@gmail.com</a
               ><br />
               <h5 style="font-weight: 300;">7742271457</h5>
@@ -1170,7 +960,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
               </h5>
             <h5 style="font-weight: 300;" >
               Competitions Manager<br />
-              <a style="font-weight: 300;" href="mailto:aditikhode.abhyuday@gmail.com"
+              <a class="contactparalinks" style="font-weight: 300;" href="mailto:aditikhode.abhyuday@gmail.com"
                 >aditikhode.abhyuday@gmail.com</a
               ><br />
               <h5 style="font-weight: 300;">8208850162</h5>
@@ -1186,7 +976,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
               </h5>
             <h5 style="font-weight: 300;">
               Competitions Manager<br />
-              <a style="font-weight: 300;" href="mailto:aryanraj.abhyuday@gmail.com"
+              <a class="contactparalinks" style="font-weight: 300;" href="mailto:aryanraj.abhyuday@gmail.com"
                 >aryanraj.abhyuday@gmail.com</a
               ><br />
               <h5 style="font-weight: 300;"  >7777023377</h5>
@@ -1194,59 +984,25 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );>
           </div>
           <!-- end contact-main -->
         </div>
-        <!-- end row -->
-        <div class="row text-center">
-          <div class="col-md-12 tab-full contact-secondary" data-aos="fade-up">
-            <h5 style="font-weight: 300;" class=" section-title subhead subhead--light">Where To Find Us
-              <br style="font-weight: 300;" >  Abhyuday Office Student Activity Centre ( SAC ) IIT Bombay Zip
-              Code - 400076</h5>
-          </div>
-          <!--  end contact-secondary -->
         </div>
         <!-- end row -->
       </div>
      </div>
           <!-- end container -->
     </section>
-       <footer class="bg-one">
-      <div class="container">
-        <div class="row">
-            <!-- copyright -->
-            <div class="col-md-6">
-                <div class="rights section-title">
-                <p>&copy 2021 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
-                    </div>
-                
-            </div>
-              <!-- Footer Social Links --
-              <div class="col-md-6 social-icon section-title">
-                <ul class="list-inline section-title">
-                  <li>
-                    <a href="#"><i class="tf-ion-social-facebook section-title"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-twitter section-title"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-linkedin section-title"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="tf-ion-social-instagram section-title"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!--/. End Footer Social Links -->
-            
-            <!-- /copyright -->
-          </div>
-          
-        </div>
+      <hr style="margin: 0 auto; width: 80%; color: #fff;">
+      <div class="col-md-12" style="text-align: center; color: #fff; position: relative; padding: 20px 0 10px">
+                <p> Follow Us &nbsp - &nbsp
+                      <a class="contactparalinks" href="https://twitter.com/Abhyuday_IITB" style="text-decoration:none;"><i class="fab fa-twitter"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.instagram.com/iitbombay_abhyuday/" style="text-decoration:none;"><i class="fab fa-instagram"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.facebook.com/abhyuday.iitb/" style="text-decoration:none;"><i class="fab fa-facebook-f"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.youtube.com/c/AbhyudayIITBombay" style="text-decoration:none;"><i class="fab fa-youtube"></i></a> &nbsp
+                      <a class="contactparalinks" href="https://www.linkedin.com/company/abhyuday-iit-bombay/" style="text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+
+      </div>
         <!-- end row -->
-      <!-- end container -->
-    </footer>
+      <!-- end container -
 
     </main><!-- End #main -->
 

@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <!-- Template Main CSS File -->
   <link href="{% static 'assetsp/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'navbar.css' %}" rel="stylesheet">
+
 
   <style>
 
@@ -81,7 +83,30 @@
 <body>
 
   <!-- ======= Header ======= -->
-  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">HOME</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">MENTORSHIPS</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">SECTORS</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">INCENTIVES</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:structure' %}">STRUCTURE</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'actionplan:partners' %}">SPONSORS</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">CONTACT</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
 
 
   <main id="main">
