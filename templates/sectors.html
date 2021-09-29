@@ -38,9 +38,7 @@ html{
 }
 
 body{
-    background-color: transparent;
-    background: url('https://i.imgur.com/ApQKtQZ.jpeg') fixed no-repeat;
-    background-size: cover;
+    background-color: #f9f9f9;
     max-height: 300rem;
     border: 15px solid transparent !important;
     -o-border-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%) !important;
@@ -332,10 +330,7 @@ Cards
 }
 
 .card-block{
-    background-color: transparent;
-    background-image: -webkit-gradient(linear,left top, right bottom,from(rgba(255, 255, 255, 0.75)),color-stop(0%, rgba(245, 245, 245, 0.75)),color-stop(16.6%, rgba(245, 245, 245, 0.75)),color-stop(37.8%, rgb(245, 245, 245)),color-stop(48.8%, rgb(245, 245, 245)),color-stop(53.1%, rgb(254, 254, 254)),color-stop(79.4%, rgba(245, 245, 245, 0.75)),color-stop(84.3%, rgba(245, 245, 245, 0.75)));
-    background-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.75) 0%,rgba(245, 245, 245, 0.75) 0%,rgba(245, 245, 245, 0.75) 16.6%,rgb(245, 245, 245) 37.8%,rgb(245, 245, 245) 48.8%,rgb(254, 254, 254) 53.1%,rgba(245, 245, 245, 0.75) 79.4%,rgba(245, 245, 245, 0.75) 84.3%);
-    background-repeat: no-repeat;
+    background-color: #211f5e;
 }
 
 .card-text {
@@ -467,7 +462,7 @@ Pixel Grid
 <link href="{% static 'navbar.css' %}" rel="stylesheet">
 
 </head>
-<body>
+<body style="background: #fdfdfd;">
 
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
@@ -493,22 +488,10 @@ Pixel Grid
 
     </div>
   </header>
-    
-<div class="container bar-cont">
-    <div class="row">
-        <div class="col-md-4 col-sm-6 push-bar">
-          <div class="creator">
-            <a  target="_blank"></a>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-      
-    </div>
-</div>
+
 <!------------------------->
 <!--========Cards========-->
-<div class="container-fluid main-cont">
+<div class="container-fluid main-cont" style="background: #f9f9f9">
     <div class="row news-row">
         <div class="container-fluid col-md-12 col-sm-6 justify-content-center news-block">
             <div class="card-group">
@@ -516,8 +499,8 @@ Pixel Grid
                 <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/5R.png')"></div>
                     <div class="card-block" >
-                    <h5 class="card-title" style="font-family: 'Anton', sans-serif">5 RS (REDUCE, REUSE, RECYCLE, RECOVER, REFUSE)<hr></h5>
-                    <p class="card-text" >Sanitation, models to reuse, reduce, recycle and recover waste,
+                    <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">THE 5 R's<hr></h5>
+                    <p class="card-text" >Reduce, Reuse, Recycle, Recover and Refuse. Sanitation, models to reuse, reduce, recycle and recover waste,
                       technology and digital innovations to substitute manual
                       scavenging and reducing the impact of climate change</p>
                     </div>
@@ -527,8 +510,8 @@ Pixel Grid
                <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/financial-inclusion.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">FINANCIAL INCLUSION<hr></h5>
-                      <p class="card-text" >     “It is making financial services available to each and everyone,
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">FINANCIAL INCLUSION<hr></h5>
+                      <p class="card-text" >It is making financial services available to each and everyone,
                         via digital payments, micro-lending, peer to peer lending, etc.”
                         This will include startups aiming at developing policies for
                         financially weak people.</p>
@@ -539,7 +522,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/sustainable-energy.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">SUSTAINABLE ENERGY<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">SUSTAINABLE ENERGY<hr></h5>
                       <p class="card-text" >Maintaining, or generating energy from cleaner fuels, improving
                         existing solutions, developing sustainable methods and educating
                         people on the same.</p>
@@ -550,7 +533,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/agriculture.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">AGRICULTURE<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">AGRICULTURE<hr></h5>
                       <p class="card-text" >70 percent of India’s rural households still primarily depend on
                         agriculture. Thus, we need startups that can aid this large mass
                         of our population.</p>
@@ -561,7 +544,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/water-management.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">WATER MANAGEMENT<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">WATER MANAGEMENT<hr></h5>
                       <p class="card-text" > "According to a recent report of NITI aayog, “21 of the major
                         Indian cities will run out of water by 2020. Thus, this sector
                         will focus on ways to provide and supply clean drinking water.”</p>
@@ -572,7 +555,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/employability.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EMPLOYABILITY<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">EMPLOYABILITY<hr></h5>
                       <p class="card-text" > Our country is facing problems regarding Employability.This
                         sector is for startups that can act as an employment source in
                         rural areas, or for less-educated people.</p>
@@ -583,7 +566,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/health.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">HEALTH<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">HEALTH<hr></h5>
                       <p class="card-text" >   Seeking Start-Ups tackling malnutrition, providing digital
                         platforms for availing health services, hygiene and sanitation.</p>
                     </div>
@@ -593,7 +576,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/women-empowerment.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">WOMEN EMPOWERMENT<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">WOMEN EMPOWERMENT<hr></h5>
                       <p class="card-text" >Encouraging startups providing regional rights and facilities,
                         security and protection, employment and employability to women,
                         to register under this sector</p>
@@ -604,7 +587,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/pollution.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">POLLUTION<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">POLLUTION<hr></h5>
                       <p class="card-text" >“Introducing this sector to come up with technologies that aid
                         people in fighting pollution for the time needed to shift to
                         clean energy fuels” and to improve the existing condition.</p>
@@ -615,7 +598,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/education.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">EDUCATION<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">EDUCATION<hr></h5>
                       <p class="card-text" >Startups aiming at improving the quality of primary education,
                         creating or prototyping Learning Management Systems (LMS),
                         practical learning aspect of secondary education and enhancing
@@ -627,7 +610,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/security.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">SECURITY<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">SECURITY<hr></h5>
                       <p class="card-text" >Startups aiming at increasing the security for online users, creating or prototyping physical or cyber security systems.</p>
                     </div>
                   </div>
@@ -636,7 +619,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/rural-development.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">RURAL DEVELOPMENT<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Anton', sans-seri; letter-spacing: 0.75px; color: #ffff">RURAL DEVELOPMENT<hr></h5>
                       <p class="card-text" >  Startups helping in reducing the gap between rural and urban areas by developing the rural areas, in terms of health, poverty, literacy and infrastructure.</p>
                     </div>
                   </div>
