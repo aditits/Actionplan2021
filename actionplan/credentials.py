@@ -1,2 +1,2 @@
-EMAIL_ADDRESS = '430projekt@gmail.com'
-EMAIL_PASSWORD = 'qwgpghbulegmlycr'
+EMAIL_ADDRESS = 'actionplan.abhyuday@gmail.com'
+EMAIL_PASSWORD = 'abhyuday@123'
