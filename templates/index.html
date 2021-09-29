@@ -24,6 +24,7 @@
  <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{% static 'navbar.css' %}" rel="stylesheet">
+      <link rel="icon" href="{% static 'logos/favicon.png' %}">
 
 
 </head>
@@ -40,7 +41,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#">HOME</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">ABOUT</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">RULES</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">MENTORSHIPS</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">SECTORS</a></li>
           <li><a class="nav-link scrollto " href="{% url 'actionplan:incentives' %}">INCENTIVES</a></li>

@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
   <link href="{% static 'navbar.css' %}" rel="stylesheet">
+<link rel="icon" href="{% static 'logos/favicon.png' %}">
 
 </head>
 <body style="background: #f9f9f9;">
@@ -35,7 +36,7 @@
         <ul>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:home' %}">HOME</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-about' %}">ABOUT</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'actionplan:faq' %}">RULES</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:mentor-view' %}">MENTORSHIP</a></li>
           <li><a class="nav-link scrollto" href="{% url 'actionplan:sectors' %}">SECTORS</a></li>
           <li><a class="nav-link scrollto active " href="{% url 'actionplan:incentives' %}">INCENTIVES</a></li>
