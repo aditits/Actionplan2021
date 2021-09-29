@@ -248,6 +248,7 @@
                   <div class="col-md-9">
                       <h2>Home</h2>
                       <p><em>TEAM NAME -</em> {{user.team_name}}<br><em>TEAM ID - </em>{{user.username}}<br>
+                      <em>SECTOR - </em> -
                       <div class="main-btn"><a href="{% url 'actionplan:team-edit' %}">Update Details</a></div>
                       <div class="fb-btn"><a href="{% url 'actionplan:logout' %}">Logout</a></div>
                   </div>
@@ -260,9 +261,11 @@
                     <div class="col-md-6">
                         <div class="left-content">
                             <h2>Instruction</h2> 
-                            <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>
-                            <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et <a href="#">placerat</a> molestie.</p>
-                            <p>Aliquam efficitur eu purus in interdum. <a href="#">Etiam tincidunt</a> magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <p>Guide
+We believe that young minds hold the key to solve numerous challenges that have plagued our society for so long. It’s the need of the hour to channelize this energy in the right direction which can definitely change the lives of people around us. Abhyuday 2020-21 brings to you, Action-Plan, the social entrepreneurship contest which revolves around the 3I’s mantra: Ideate - Innovate - Implement. In order to fulfil these dreams, Abhyuday IIT Bombay brings together the brightest from colleges, the best from corporate, the learnt from academia and the experienced from NGOs and creates a platform where young minds are nurtured to create solutions that have the potential to bring about grass root level changes.
+<!--For more info about the Action plan visit the website :-->
+<!-- <a href="http://actionplan.abhyudayiitb.org/">http://actionplan.abhyudayiitb.org/</a> -->
+                            </p>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -281,9 +284,9 @@
                             <div class="blog-card">
                                 <div class="meta">
                                   <!-- <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div> -->
-                                  <div class="photo" style="background-image: url(dashboard/img/stage1.png)"></div>
+                                  <div class="photo" style="background-image: url(../static/dashboard/img/stage1.png)"></div>
                                   <ul class="details">
-                                    <li class="date">Closes on Oct. 24, 2021</li>
+                                    <li class="date">Closes on Nov. 06, 2021</li>
                                   </ul>
                                 </div>
                                 <div class="description">
@@ -292,8 +295,12 @@
                                   font-weight: 700;">Stage 1</h1>
                                   <h2 style="font-size: 1.2rem;padding-bottom: 0;
                                   padding-top: 0.25rem;">Playbook Submission</h2>
-                                  <p style="  color: #a2a2a2;
-                                  "> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                                  <p style="  color: #a2a2a2;"> The purpose of this playbook is to help develop a deeper understanding of
+the opportunities you are trying to explore. The playbook would help build the team's
+layout, clear objectives for their project’s ideas, identify metrics for measurements and
+risks involved, set out clear goals and provide a common framework & approach for
+reaching a logical conclusion within the constraints of time, space & resources.
+</p>
                                   <p class="read-more">
                                     <a href="#">Add Submission</a>
                                   </p>
@@ -301,9 +308,9 @@
                             </div>
                             <div class="blog-card alt">
                                 <div class="meta">
-                                  <div class="photo" style="background-image: url(dashboard/img/lock.png)"></div>
+                                  <div class="photo" style="background-image: url(../static/dashboard/img/lock.png)"></div>
                                   <ul class="details">
-                                    <li class="date">Unlocks on Oct. 24, 2021</li>
+                                    <li class="date">Unlocks January 2022</li>
                                   </ul>
                                 </div>
                                 <div class="description">
@@ -315,16 +322,16 @@
                             </div>
                             <div class="blog-card">
                                 <div class="meta">
-                                  <div class="photo" style="background-image: url(dashboard/img/lock2.png)"></div>
+                                  <div class="photo" style="background-image: url(../static/dashboard/img/lock2.png)"></div>
                                   <ul class="details">
-                                    <li class="date">Unlocks on Oct. 24, 2021</li>
+                                    <li class="date">During Social Fest 2021</li>
                                   </ul>
                                 </div>
                                 <div class="description">
                                     <h1 style="font-size: 24px;
                                     text-transform: uppercase;
                                     font-weight: 700;">Stage 3</h1>
-                                  <h2>Playbook Submission</h2>
+                                  <h2>Final Pitching Round</h2>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +344,7 @@
                 <div class="container-fluid">
                     <div class="col-md-12">
                         <div class="left-content">
-                            <h2 style="margin-bottom: 0;">Terms And Conditions</h2> 
+                            <h2 style="margin-bottom: 0;">Rules And Regulations</h2>
                             <p>
                               <ul style="list-style-type: circle; font-size: 13px;
                               color: #fff;
@@ -345,11 +352,14 @@
                               font-weight: 300;
                               line-height: 24px;
                               margin-bottom: 30px;">
-                                  <li style="padding-bottom: 0.3rem">The Certificate of Organization as College Representative will be given only if he/she fulfills the necessary conditions.</li>
-                                  <li style="padding-bottom: 0.3rem">More than one CR team can be selected from a college depending upon the strength of the college.</li>
-                                  <li style="padding-bottom: 0.3rem">Abhyuday, IIT Bombay shall send all the publicity materials to the respective colleges, but will not be liable for extra cost incurred by the CR team.</li>
-                                  <li style="padding-bottom: 0.3rem">The Certificate of Appreciation shall be provided only on the successful completion of the complete term.</li>
-                                  <li style="padding-bottom: 0.3rem">Abhyuday, IIT Bombay can change the terms and conditions if deemed necessary.</li>
+                                  <li style="padding-bottom: 0.3rem">There is no age restriction on any individual to participate. Anyone, from students to working professionals across the nation, can participate.</li>
+                                  <li style="padding-bottom: 0.3rem">Any startup incorporated before 4 years of the conclusion i.e. before January 2018 will not be allowed to participate.</li>
+                                  <li style="padding-bottom: 0.3rem">Action Plan aims to promote startups that require assistance in funding, mentoring, etc. Therefore startups who have raised external funding i.e. funding from angel investors, venture capitalists, etc. cannot participate</li>
+                                  <li style="padding-bottom: 0.3rem">A team can register with minimum 2 and maximum 8 members including the Team Leader.</li>
+                                  <li style="padding-bottom: 0.3rem">Team leader will be point of contact and his/her email address will be used for future correspondence.</li>
+                                  <li style="padding-bottom: 0.3rem">Team must abide by timely instructions, guidelines and ethics provided by Abhyuday with general business ethics..</li>
+                                  <li style="padding-bottom: 0.3rem">Additionally the plan should solve a critical social problem in an innovative as well as transformational manner. It should have some quantifiable social return.</li>
+
                               </ul>
                           </p>
                             <!-- <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>

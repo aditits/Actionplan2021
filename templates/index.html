@@ -33,7 +33,7 @@
     <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
+        <a href="http://actionplan.abhyudayiitb.org/"><img src="{% static 'logos/logo.png' %}" style="width: 8em" alt="" /></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -675,11 +675,10 @@ fsEnter.addEventListener('click', function (e) {
                 .reg-button:hover{
                    background: #211f5e;
                 }
+
             </style>
           <div class="section-title" style="width: 100vw; margin: 0 auto;">
-              <span style="top: 48px; font-size: 5rem;">ACTION PLAN</span>
-              <h2 style="font-size: 4.5rem;">ACTION PLAN</h2>
-
+              <h2 class="h2main" style="font-size: 5rem; color: #fff;">ACTION PLAN</h2>
           </div>
         </div>
         <div>
@@ -689,7 +688,7 @@ fsEnter.addEventListener('click', function (e) {
             <a data-scroll href="{% url 'actionplan:team-register' %}" class="btn btn-transparent reg-button"
               >REGISTER</a>
             <a data-scroll href="{% url 'actionplan:team-login' %}" class="btn btn-transparent reg-button"
-              >SIGN IN</a>
+              >LOGIN</a>
           </div>
         </div>
       </div>
@@ -1010,6 +1009,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );">
   <!-- ======= Footer ======= -->
   
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>

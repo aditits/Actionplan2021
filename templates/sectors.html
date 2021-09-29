@@ -5,15 +5,8 @@
 
 <head>
     <meta charset="UTF-8">
-  
-
-
-
-
 
 <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-
-
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -458,8 +451,14 @@ Pixel Grid
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 <link href="{% static 'navbar.css' %}" rel="stylesheet">
+
+<link rel="icon" href="{% static 'logos/favicon.png' %}">
 
 </head>
 <body style="background: #fdfdfd;">
@@ -467,9 +466,8 @@ Pixel Grid
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <img src="{% static 'assets/img/logo.png' %}" style="width: 8em" alt="" />
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <img src="{% static 'logos/logo.png' %}" style="width: 8em" alt="" />
+
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -484,7 +482,7 @@ Pixel Grid
           <li><a class="nav-link scrollto" href="{% url 'actionplan:home-contact-us' %}">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
   </header>
@@ -499,7 +497,7 @@ Pixel Grid
                 <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/5R.png')"></div>
                     <div class="card-block" >
-                    <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">THE 5 R's<hr></h5>
+                    <h5 class="card-title" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.75px; color: #fff">THE 5 R's<hr></h5>
                     <p class="card-text" >Reduce, Reuse, Recycle, Recover and Refuse. Sanitation, models to reuse, reduce, recycle and recover waste,
                       technology and digital innovations to substitute manual
                       scavenging and reducing the impact of climate change</p>
@@ -510,7 +508,7 @@ Pixel Grid
                <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/financial-inclusion.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">FINANCIAL INCLUSION<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;color: #fff">FINANCIAL INCLUSION<hr></h5>
                       <p class="card-text" >It is making financial services available to each and everyone,
                         via digital payments, micro-lending, peer to peer lending, etc.”
                         This will include startups aiming at developing policies for
@@ -522,7 +520,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/sustainable-energy.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">SUSTAINABLE ENERGY<hr></h5>
+                      <h5 class="card-title" style="font-family:'Montserrat', sans-serif;color: #fff">SUSTAINABLE ENERGY<hr></h5>
                       <p class="card-text" >Maintaining, or generating energy from cleaner fuels, improving
                         existing solutions, developing sustainable methods and educating
                         people on the same.</p>
@@ -533,7 +531,7 @@ Pixel Grid
                   <div class="card">
                     <div class="card-img-top" style="background-image: url('/static/agriculture.png')"></div>
                     <div class="card-block" >
-                      <h5 class="card-title" style="font-family: 'Anton', sans-serif; letter-spacing: 0.75px; color: #fff">AGRICULTURE<hr></h5>
+                      <h5 class="card-title" style="font-family: 'Montserrat', sans-serif; color: #fff">AGRICULTURE<hr></h5>
                       <p class="card-text" >70 percent of India’s rural households still primarily depend on
                         agriculture. Thus, we need startups that can aid this large mass
                         of our population.</p>
