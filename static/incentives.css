@@ -115,7 +115,8 @@ body {
     transform: rotateY(-180deg);
 }
 .back {
-    background: #fff;
+    background: #211f5e;
+    color: #fff;
     transform: rotateY(-180deg);
     padding: 0 2em;
 }
