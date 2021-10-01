@@ -79,12 +79,36 @@
         .sponsor3{
             width: 20%;
         }
+        .sponsoricons{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 11px;
+        }
+
+        @media screen and (max-width: 770px){
+          .mainsponser{
+          width: 90%;
+          }
+          .sponsor3{
+            width: 50%;
+          }
+          .sponsoricons{
+          font-size:1rem;
+          }
+
+        }
 
         @media screen and (max-width: 770px){
           .sponsor3{
             width: 50%;
           }
+          .sponsoricons{
+          font-size:1rem;
+          }
+
         }
+
+
 
   </style>
 
@@ -135,7 +159,7 @@
             <div class="col-lg-12">
                 <div class="separator"><h3 style="font-weight:200;">&nbsp;Title Sponsor&nbsp;</h3></div>
                 <a href="https://www.schaeffler.co.in/"><img class="center mainsponser" src="{% static 'assetsp/img/sponsors/Title-Sponsor.jpg' %}" alt="sponsor"></a>
-                <p style="text-align: center;font-size: 1.5rem;margin-top: 11px;">
+                <p class="sponsoricons">
                   <a href="https://www.twitter.com/schaefflergroup" style="text-decoration:none; color: #211f5e;"><i class="fab fa-twitter"></i></a> &nbsp
                   <a href="https://www.instagram.com/schaefflergroup/" style="text-decoration:none; color: #211f5e;"><i class="fab fa-instagram"></i></a> &nbsp
                   <a href="https://www.facebook.com/SchaefflerIndia/" style="text-decoration:none; color: #211f5e;"><i class="fab fa-facebook-f"></i></a> &nbsp
@@ -149,7 +173,7 @@
             <div class="col-lg-12">
                 <div class="separator"><h3 style="font-weight:200;">&nbsp;Associate Sponsor&nbsp;</h3></div>
                 <a href="https://www.oxfamindia.org/"><img class="center mainsponser" src="{% static 'assetsp/img/sponsors/Associate Sponsor.png' %}" alt="sponsor"></a>
-                <p style="text-align: center;font-size: 1.5rem;margin-top: 11px;">
+                <p class="sponsoricons">
                   <a href="https://twitter.com/OxfamIndia" style="text-decoration:none; color: #211f5e"><i class="fab fa-twitter"></i></a> &nbsp
                   <a href="https://www.instagram.com/oxfam_india/?hl=en" style="text-decoration:none; color: #211f5e"><i class="fab fa-instagram"></i></a> &nbsp
                   <a href="https://www.facebook.com/oxfamindia/" style="text-decoration:none; color: #211f5e"><i class="fab fa-facebook-f"></i></a> &nbsp
@@ -164,7 +188,7 @@
             <div class="col-lg-12">
                 <div class="separator"><h3 style="font-weight:200";>&nbsp;Powered By&nbsp;</h3></div>
                 <a href="https://iocl.com/"><img class="center mainsponser sponsor3" src="{% static 'assetsp/img/sponsors/Powered By.png' %}" alt="sponsor"></a>
-                <p style="text-align: center;font-size: 1.5rem;margin-top: 11px;">
+                <p class="sponsoricons">
                   <a href="https://www.twitter.com/indianOilcl" style="text-decoration:none; color: #211f5e"><i class="fab fa-twitter"></i></a> &nbsp
                   <a href="https://www.instagram.com/indianoilcorp" style="text-decoration:none; color: #211f5e"><i class="fab fa-instagram"></i></a> &nbsp
                   <a href="https://www.facebook.com/IndianOilCorpLimited" style="text-decoration:none; color: #211f5e"><i class="fab fa-facebook-f"></i></a> &nbsp
