@@ -48,7 +48,9 @@ def TeamRegisterView(request):
             msg['Subject'] = "Registration Successful"
             msg['From'] = EMAIL_ADDRESS
             msg['To'] = email
+            # msg.content_subtype = "html"
             msg.set_content('Login Credentials - Username: {} Password: {}'.format(username, password))
+            # msg.content_subtype = "html"
             with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
                 smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
                 smtp.send_message(msg)
