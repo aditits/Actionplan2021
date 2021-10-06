@@ -756,6 +756,7 @@ section {
 }
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+  background: #fff;
 }
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
   top: 15px;
