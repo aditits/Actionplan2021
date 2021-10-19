@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Team, Mentor
+from .models import Team, Mentor, Submissions
 from .forms import TeamSignUpForm
 from django.contrib.auth.admin import UserAdmin
 
@@ -40,3 +40,4 @@ class CustomUserAdmin(UserAdmin):
 
 admin.site.register(Team, CustomUserAdmin)
 admin.site.register(Mentor)
+admin.site.register(Submissions)

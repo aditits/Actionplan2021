@@ -22,12 +22,6 @@
 
 <body>
     {% block content %}
-    <nav class="navbar navbar-inverse" style="background-color: #2E373C;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <img src="{% static 'logo.png' %}" class="img-fluid" alt="logo" width="10%" style="margin-bottom: 0px;">
-            </div>
-    </nav>
 
     <div class="registration-form">
         <form method="POST" action="" novalidate>
@@ -46,10 +40,16 @@
     <style>
         @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
         @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
         body {
-            font-family: "Quattrocento Sans", sans-serif;
-            background: url("/static/fifth_bg.jpg") no-repeat center center fixed;
+            font-family: 'Roboto Condensed', sans-serif;
+            background: #fff;
+<!--            background: url("../../static/loginbg.gif") no-repeat center center fixed;-->
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -57,7 +57,6 @@
         }
 
         h2 {
-            font-family: "Quattrocento Sans", sans-serif;
             font-size: 40px;
             font-weight: 900;
         }
@@ -98,6 +97,13 @@
             /* border-top-left-radius: 30px;
             border-top-right-radius: 30px; */
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+            padding: 21px 78px;
+            background: rgba( 33, 31, 94, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
 
@@ -168,25 +174,7 @@
 
 </body>
 
-<footer id="footer" style="color: #fff;">
-    <div class="container">
-        <div class="row wow fadeInUp" data-wow-duration="500ms">
-            <div class="col-lg-12">
-                <!-- copyright -->
-                <div class="copyright text-center">
-                    <div class="rights">
-                        <p>&copy 2020 ABHYUDAY, IIT BOMBAY, ALL RIGHTS RESERVED</p>
-                    </div>
 
-                </div>
-                <!-- /copyright -->
-            </div>
-            <!-- end col lg 12 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</footer>
 {% endblock content %}
 
 </html>

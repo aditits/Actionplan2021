@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
-from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm
+from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm, Stage1SubmissionForm
 from django.contrib.auth import  logout, login
 from email.message import EmailMessage
 from django.contrib.auth import authenticate
@@ -37,6 +37,7 @@ def TeamRegisterView(request):
             username = 'AP' + ''.join(random.choices(string.digits, k = 4))
             password = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
             email = form.cleaned_data['team_leader_emailID']
+            name = form.cleaned_data['team_leader_name']
             #save user to database
             instance.username = username
             instance.password = make_password(password)
@@ -48,9 +49,7 @@ def TeamRegisterView(request):
             msg['Subject'] = "Registration Successful"
             msg['From'] = EMAIL_ADDRESS
             msg['To'] = email
-            # msg.content_subtype = "html"
-            msg.set_content('Login Credentials - Username: {} Password: {}'.format(username, password))
-            # msg.content_subtype = "html"
+            msg.set_content('Hello {}, \nGreetings from Abhyuday, IIT Bombay!\nCongratulations on registering to Action plan competition 2021-22 \n\nACTION PLAN ID: {} \nPASSWORD: {} \n\n* To proceed further, login using your ACTION PLAN ID and Password and fill in the further details. \n* You’ll get access to a questionnaire soon regarding which you will be notified over mail. This needs to be filled compulsorily to proceed further in the competition. \n* Kindly note your ACTION PLAN ID and Password with you for future reference. \n\nAll the rules regarding registration and questionnaire are mentioned on the website. The other details of the competition will be conveyed further. \n\nThanks & Regards, \nAction plan 2021-22'.format(name, username, password))
             with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
                 smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
                 smtp.send_message(msg)
@@ -77,8 +76,17 @@ def LoginView(request):
 
 @login_required(login_url='/login/')
 def DashboardView(request):
-    if request.method == 'GET':
-        return render(request, 'dashboard.html')
+    instance = Team.objects.get(username=request.user)
+    if request.POST:
+        form1 = Stage1SubmissionForm(request.POST, request.FILES)
+        if form1.is_valid():
+            instance = form1.save(commit=False)
+            instance.team = request.user
+            instance.save()
+            return redirect('actionplan:dashboard')
+    else:
+        form1 = Stage1SubmissionForm(instance=instance)
+    return render(request, 'dashboard.html', {'form': form1})
 
 
 @login_required(login_url='/login/')

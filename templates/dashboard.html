@@ -15,12 +15,15 @@
         <link rel="stylesheet" href="{% static 'dashboard/css/light-box.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/b50c7a47f6.js" crossorigin="anonymous"></script>
+
         <!-- <link rel="stylesheet" href="css/all.css"> -->
         <link rel="stylesheet" href="{% static 'dashboard/css/templatemo-main.css' %}">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+
         <script src="dashboard/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 
         <!-- favicons -->
     <link rel="shortcut icon" href="{% static 'dashboard/img/favicon.png' %}" type="image/x-icon">
@@ -163,12 +166,14 @@
 .blog-card .description .read-more {
   text-align: right;
 }
-.blog-card .description .read-more a {
+.blog-card .description .read-more button {
   color: #F9A826;
   display: inline-block;
   position: relative;
+  background: #fff;
+  border: #fff;
 }
-.blog-card .description .read-more a:after {
+.blog-card .description .read-more button:after {
   content: "";
   font-family: FontAwesome;
   margin-left: -10px;
@@ -176,7 +181,7 @@
   vertical-align: middle;
   transition: margin 0.3s, opacity 0.3s;
 }
-.blog-card .description .read-more a:hover:after {
+.blog-card .description .read-more button:hover:after {
   margin-left: 5px;
   opacity: 1;
 }
@@ -233,6 +238,14 @@
   }
   .blog-card.alt .details {
     padding-left: 25px;
+
+
+  }
+  .btn-Style {
+      align-self: center;
+      background: indianred;
+      color: white;
+
   }
 }
         </style>
@@ -300,7 +313,7 @@ risks involved, set out clear goals and provide a common framework & approach fo
 reaching a logical conclusion within the constraints of time, space & resources.
 </p>
                                   <p class="read-more">
-                                    <a href="https://app.startuped.net/signup?utm_source=IITBombay&utm_medium=Competition&utm_campaign=ActionPlan">Add Submission</a>
+                                      <button type="button" id="add-submission" data-toggle="modal" data-target="#stage1-submission">Add Submission</button>
                                   </p>
                                 </div>
                             </div>
@@ -381,7 +394,34 @@ reaching a logical conclusion within the constraints of time, space & resources.
             </p>
           </div>
         </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="stage1-submission">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h5 class="modal-title">Stage 1 Submission</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form method="POST" name='stage1-submission' action="{% url 'actionplan:dashboard' %}" enctype="multipart/form-data" style="font-size: 1.2rem;">
+{% csrf_token %}
+{{ form.as_p }}
+</div>
+      <div class="modal-footer">
+        <input type="submit" style="padding: 5px 10px;
+    font-size: 1.1rem;
+    background: #fa5252;
+    color: #fff;
+    border: #fa5252;
+}" class="btn-Style" value="Upload"/>
+      </div>
+</form>
+
+    </div>
+  </div>
+</div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{% static 'dashboard/js/vendor/jquery-1.11.2.min.js' %}"><\/script>')</script>
@@ -432,5 +472,13 @@ reaching a logical conclusion within the constraints of time, space & resources.
         };
     }
     </script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#add-submission').modal('show');
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+});
+</script>
 </body>
 </html>
