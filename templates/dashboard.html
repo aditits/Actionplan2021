@@ -166,12 +166,14 @@
 .blog-card .description .read-more {
   text-align: right;
 }
-.blog-card .description .read-more a {
+.blog-card .description .read-more button {
   color: #F9A826;
   display: inline-block;
   position: relative;
+  background: #fff;
+  border: #fff;
 }
-.blog-card .description .read-more a:after {
+.blog-card .description .read-more button:after {
   content: "";
   font-family: FontAwesome;
   margin-left: -10px;
@@ -179,7 +181,7 @@
   vertical-align: middle;
   transition: margin 0.3s, opacity 0.3s;
 }
-.blog-card .description .read-more a:hover:after {
+.blog-card .description .read-more button:hover:after {
   margin-left: 5px;
   opacity: 1;
 }
@@ -311,7 +313,7 @@ risks involved, set out clear goals and provide a common framework & approach fo
 reaching a logical conclusion within the constraints of time, space & resources.
 </p>
                                   <p class="read-more">
-                                      <button type="button" class="btn-Style" id="add-submission" data-toggle="modal" data-target="#stage1-submission">Add Submission</button>
+                                      <button type="button" id="add-submission" data-toggle="modal" data-target="#stage1-submission">Add Submission</button>
                                   </p>
                                 </div>
                             </div>
@@ -403,12 +405,17 @@ reaching a logical conclusion within the constraints of time, space & resources.
         </button>
       </div>
       <div class="modal-body">
-<form method="POST" name='stage1-submission' action="{% url 'actionplan:dashboard' %}" enctype="multipart/form-data">
+<form method="POST" name='stage1-submission' action="{% url 'actionplan:dashboard' %}" enctype="multipart/form-data" style="font-size: 1.2rem;">
 {% csrf_token %}
 {{ form.as_p }}
 </div>
       <div class="modal-footer">
-        <input type="submit" class="btn-Style" value="Upload"/>
+        <input type="submit" style="padding: 5px 10px;
+    font-size: 1.1rem;
+    background: #fa5252;
+    color: #fff;
+    border: #fa5252;
+}" class="btn-Style" value="Upload"/>
       </div>
 </form>
 
