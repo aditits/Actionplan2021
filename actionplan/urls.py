@@ -7,7 +7,7 @@ from . import views
 app_name = 'actionplan'
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="dashboard.html"), name='home'),
+    path('', TemplateView.as_view(template_name="index.html"), name='home'),
     path('home-about', views.HomeAboutView, name='home-about'),
     path('home-contact-us', views.HomeContactView, name='home-contact-us'),
     path('register/', views.MentorRegisterView, name='mentor-register'),
