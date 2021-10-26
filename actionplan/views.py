@@ -134,4 +134,3 @@ def HomeContactView(request):
 
 def FAQView(request):
     return render(request, 'rulesfaq.html')
-
