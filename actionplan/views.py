@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 
 from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm, Stage1SubmissionForm
-from django.contrib.auth import  logout, login
+from django.contrib.auth import logout, login
 from email.message import EmailMessage
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import AuthenticationForm
@@ -13,6 +13,7 @@ import random
 import smtplib
 from .credentials import EMAIL_ADDRESS, EMAIL_PASSWORD
 from .models import Team
+from django.contrib import messages
 
 # Create your views here.
 
@@ -83,6 +84,7 @@ def DashboardView(request):
             instance = form1.save(commit=False)
             instance.team = request.user
             instance.save()
+            messages.success(request, 'Success! Uploaded')
             return redirect('actionplan:dashboard')
     else:
         form1 = Stage1SubmissionForm(instance=instance)
