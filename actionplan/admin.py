@@ -8,6 +8,8 @@ class CustomUserAdmin(UserAdmin):
     model = Team
     add_form = TeamSignUpForm
 
+    list_display = ('username', 'team_leader_emailID', 'team_leader_name', 'team_leader_phone_number')
+
     fieldsets = (
     *UserAdmin.fieldsets,
     (
@@ -38,6 +40,29 @@ class CustomUserAdmin(UserAdmin):
     )
     )
 
+class CustomSubmissions(admin.ModelAdmin):
+    model = Submissions
+
+    def team_id(self, obj):
+        return obj.team.username
+
+    def team_emailID(self, obj):
+        return obj.team.team_leader_emailID
+
+    def team_leader_name(self, obj):
+        return obj.team.team_leader_name
+
+    def team_leader_phone_number(self, obj):
+        return obj.team.team_leader_phone_number
+
+
+    list_display = ('stage1_file','team_id', 'team_emailID', 'team_leader_name', 'team_leader_phone_number')
+    fieldsets = (
+                    'Information',
+                    {
+                        'fields': ('stage1_file', 'stage2_file', 'stage3_file', 'team'),
+                    }),
+
 admin.site.register(Team, CustomUserAdmin)
 admin.site.register(Mentor)
-admin.site.register(Submissions)
+admin.site.register(Submissions, CustomSubmissions)
