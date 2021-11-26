@@ -20,6 +20,9 @@ class Mentor(models.Model):
         ('Pollution', 'Pollution'),
         ('Financial Inclusion and Fintech', 'Financial Inclusion and Fintech'),
         ('Water management', 'Water management'),
+        ('Rural Development', 'Rural Development'),
+        ('Security', 'Security'),
+
     )
 
     MentorType = (
