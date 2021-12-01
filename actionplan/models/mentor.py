@@ -35,7 +35,7 @@ class Mentor(models.Model):
     phone_number            = PhoneNumberField(null=False, blank=False, unique=True)
     city                    = models.CharField(max_length=100)
     state                   = models.CharField(max_length=100)
-    current_portfolio       = models.URLField(max_length=200)
+    current_portfolio       = models.CharField(max_length=200)
     linkedIn_ID             = models.URLField(max_length=200)
     work_timeline           = models.CharField(max_length=500)
     description             = models.TextField(gettext_lazy('description'), max_length=500, blank=True)
