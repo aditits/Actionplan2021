@@ -56,7 +56,7 @@ class CustomSubmissions(admin.ModelAdmin):
         return obj.team.team_leader_phone_number
 
 
-    list_display = ('stage1_file','team_id', 'team_emailID', 'team_leader_name', 'team_leader_phone_number')
+    list_display = ('stage1_file','stage2_file','team_id', 'team_emailID', 'team_leader_name', 'team_leader_phone_number')
     fieldsets = (
                     'Information',
                     {

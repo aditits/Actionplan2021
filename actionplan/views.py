@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
-from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm, Stage1SubmissionForm
+from .forms import MentorRegistrationForm, TeamSignUpForm, TeamEditForm, Stage1SubmissionForm, Stage2SubmissionForm
 from django.contrib.auth import logout, login
 from email.message import EmailMessage
 from django.contrib.auth import authenticate
@@ -79,7 +79,7 @@ def LoginView(request):
 def DashboardView(request):
     instance = Team.objects.get(username=request.user)
     if request.POST:
-        form1 = Stage1SubmissionForm(request.POST, request.FILES)
+        form1 = Stage2SubmissionForm(request.POST, request.FILES)
         if form1.is_valid():
             instance = form1.save(commit=False)
             instance.team = request.user
@@ -87,7 +87,7 @@ def DashboardView(request):
             messages.success(request, 'Success! Uploaded')
             return redirect('actionplan:dashboard')
     else:
-        form1 = Stage1SubmissionForm(instance=instance)
+        form1 = Stage2SubmissionForm(instance=instance)
     return render(request, 'dashboard.html', {'form': form1})
 
 
